@@ -9,10 +9,17 @@ A blog for a photographer with a minimal clean aesthetic.
 ## Components
 - Button
 - Header
+- photogaper img (on click se about page)
 - List of all the links to different posts, with images and h3 text.
+- footer
+
 
 ### Pages
 - Login - with two buttons for creator and for user. with an img on the side.
+- Main page
+- Post details
+- about page
+- links (just a page with main photo,links to fake social media)
 
 
 ## Development server
