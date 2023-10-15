@@ -1,6 +1,19 @@
 # PhotoBlog
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.4.
+A blog for a photographer with a minimal clean aesthetic.
+
+## Services
+- Comment section
+- 
+
+## Components
+- Button
+- Header
+- List of all the links to different posts, with images and h3 text.
+
+### Pages
+- Login - with two buttons for creator and for user. with an img on the side.
+
 
 ## Development server
 
@@ -22,6 +35,3 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
