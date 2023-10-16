@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+  loginAsCreator() {
+    // Handle login as creator
+  }
 
+  loginAsUser() {
+    // Handle login as user
+  }
 }
