@@ -1,0 +1,36 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 5px;
+    height: 8vh;
+}
+
+.brand {
+    color: #545454;
+    font-size: large;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #545454;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+}

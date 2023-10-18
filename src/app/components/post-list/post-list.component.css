@@ -1,12 +1,16 @@
+
 /* Post grid */
 .grid-container {
-    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
 }
 
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
     align-items: center;
     list-style: none;
     padding: 0;
