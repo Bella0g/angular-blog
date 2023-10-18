@@ -1,28 +1,31 @@
-
 /* Post grid */
 .grid-container {
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 60%;
 }
 
 .image-grid {
+    width: 60%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    align-items: center;
+    grid-template-columns: 50% 50%;
+    gap: 15px;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-/* Post title */
 .image-grid-item {
-    display: flex;
-    flex-direction: column;
+    width: 100%
 }
 
+.image-grid-item img {
+    max-width: 100%;
+    /* Ensure images don't exceed their container's width */
+    height: auto;
+    /* Maintain the image's aspect ratio */
+}
+
+/* Post title */
 a {
     text-decoration: none;
     color: #333;
@@ -34,7 +37,9 @@ a:hover {
     color: #656565;
 }
 
-/* Post image size */
-img {
-    max-width: 100%;
+
+@media (max-width: 767px) {
+    .image-grid {
+        grid-template-columns: 1fr;
+    }
 }
