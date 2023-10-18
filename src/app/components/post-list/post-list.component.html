@@ -1,0 +1,6 @@
+<ul class="image-grid">
+      <li class="image-grid-item" *ngFor="let post of PostList">
+         <img [src]="post.imageUrl" alt="{{ post.title }}" />
+        <a href="{{ post.imageUrl }}">{{ post.title }}</a>
+      </li>
+</ul>
