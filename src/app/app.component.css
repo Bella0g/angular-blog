@@ -1,3 +1,68 @@
 :host {
     font-family: 'Poppins', sans-serif;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 5px;
+    margin-bottom: 10px;
+    height: 6vh;
+    border-bottom: #cfcfcf 1px solid;
+}
+
+.brand {
+    color: #545454;
+    font-size: large;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #545454;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+}
+
+.hamburger-menu {
+    display: none;
+    /* Initially hide the hamburger menu */
+    cursor: pointer;
+}
+
+.hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #545454;
+    margin: 4px 0;
+}
+
+/* Media query for mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        /* Hide the navigation links by default */
+    }
+
+    .hamburger-menu {
+        display: block;
+        /* Display the hamburger menu on mobile */
+    }
+}

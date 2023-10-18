@@ -6,6 +6,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { MainComponent } from './pages/main/main.component';
 import { PostListComponent } from './components/post-list/post-list.component';
 import { HeaderComponent } from './components/header/header.component';
+import { AboutComponent } from './pages/about/about.component';
+import { MeComponent } from './components/me/me.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { HeaderComponent } from './components/header/header.component';
     LoginComponent,
     MainComponent,
     PostListComponent,
-    HeaderComponent
+    HeaderComponent,
+    AboutComponent,
+    MeComponent
   ],
   imports: [
     BrowserModule
