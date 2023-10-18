@@ -25,7 +25,7 @@ export class PostListComponent {
       imageUrl: './assets/designer/designer-4.jpeg',
     },
   {
-    title: 'Pasta',
+    title: 'Fashion show in india',
     imageUrl: './assets/india/india-hidden.jpeg',
     },
     {
