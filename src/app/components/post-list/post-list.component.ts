@@ -32,6 +32,18 @@ export class PostListComponent {
       title: 'Photoshoot for japans natinal day',
       imageUrl: './assets/japan/japan-model.jpeg',
     },
+    {
+      title: 'my friends new brand H33y',
+      imageUrl: './assets/new-brand/brand-2.jpeg',
+    },
+    {
+      title: 'water sirens',
+      imageUrl: './assets/water/water-2.jpeg',
+    },
+    {
+      title: 'Photoshoot for japans natinal day',
+      imageUrl: './assets/japan/japan-model.jpeg',
+    },
   ];
 }
 
