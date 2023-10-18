@@ -1,5 +1,7 @@
 :host {
+    font-family: 'Playfair Display', serif;
     font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -14,8 +16,9 @@ header {
 }
 
 .brand {
-    color: #545454;
+    color: #1d1d1d;
     font-size: large;
+    font-family: 'Roboto', sans-serif;
 }
 
 nav ul {

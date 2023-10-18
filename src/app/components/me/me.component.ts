@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./me.component.css']
 })
 export class MeComponent {
-
+  handleClick(): void {
+    // Perform the desired action here
+    console.log('Image clicked!');
+  }
 }
