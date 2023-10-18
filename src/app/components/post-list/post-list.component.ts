@@ -38,11 +38,11 @@ export class PostListComponent {
     },
     {
       title: 'water sirens',
-      imageUrl: './assets/water/water-2.jpeg',
+      imageUrl: './assets/water/water-3.jpeg',
     },
     {
-      title: 'Photoshoot for japans natinal day',
-      imageUrl: './assets/japan/japan-model.jpeg',
+      title: 'Marketing images for a new play',
+      imageUrl: './assets/student/art-study.jpeg',
     },
   ];
 }
