@@ -1,8 +1,10 @@
 <div class="grid-container">
-<ul class="image-grid">
-      <li class="image-grid-item" *ngFor="let post of PostList">
-         <img [src]="post.imageUrl" alt="{{ post.title }}" />
-        <a href="{{ post.imageUrl }}">{{ post.title }}</a>
-      </li>
-</ul>
+      <ul class="image-grid">
+            <li class="image-grid-item" *ngFor="let post of PostList">
+                  <a [routerLink]="['./post-details', post.title]">
+                        <img [src]="post.imageUrl" alt="{{ post.title }}" />
+                        <span>{{ post.title }}</span>
+                  </a>
+            </li>
+      </ul>
 </div>
