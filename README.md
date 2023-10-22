@@ -22,6 +22,7 @@ A blog for a photographer with a minimal clean aesthetic.
 - links (just a page with main photo,links to fake social media)
 
 
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.

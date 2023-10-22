@@ -1,1 +1,8 @@
 
+<!-- comments -->
+<div class="comments">
+    <h2>Kommentarer</h2>
+    <div *ngFor="let comment of comments">
+        <app-comment [comment]="comment"></app-comment>
+    </div>
+</div>
