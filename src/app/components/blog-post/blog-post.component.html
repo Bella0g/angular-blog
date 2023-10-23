@@ -1,8 +1,11 @@
+<div class="blog-post">
+    <!-- Display the blog post content here -->
 
-<!-- comments -->
-<div class="comments">
-    <h2>Kommentarer</h2>
-    <div *ngFor="let comment of comments">
-        <app-comment [comment]="comment"></app-comment>
+    <div class="comments">
+        <h2>Comments</h2>
+        <div *ngFor="let comment of comments">
+            <app-comment [comment]="comment"></app-comment>
+        </div>
+        <app-comment-form (commentAdded)="addComment($event)"></app-comment-form>
     </div>
 </div>

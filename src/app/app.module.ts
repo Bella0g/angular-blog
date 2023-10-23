@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { MainComponent } from './pages/main/main.component';
@@ -12,6 +13,7 @@ import { PostDetailsComponent } from './pages/post-details/post-details.componen
 import { BlogPostComponent } from './components/blog-post/blog-post.component';
 import { AdminComponent } from './pages/admin/admin.component';
 import { CommentComponent } from './components/comment/comment.component';
+import { CommentFormComponent } from './components/comment-form/comment-form.component';
 
 @NgModule({
   declarations: [
@@ -25,11 +27,13 @@ import { CommentComponent } from './components/comment/comment.component';
     BlogPostComponent,
     AdminComponent,
     CommentComponent,
-    CommentComponent,
+    CommentFormComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

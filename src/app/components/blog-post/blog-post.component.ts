@@ -18,18 +18,10 @@ export interface BlogPost {
   styleUrls: ['./blog-post.component.css']
 })
 export class BlogPostComponent {
-  comments: Comment[] = [
-    {
-      author: 'Anonym användare',
-      text: 'Detta är en kommentar.',
-      date: new Date(),
-    },
-    {
-      author: 'En annan användare',
-      text: 'En annan kommentar här.',
-      date: new Date(),
-    },
-  ];
+  comments: Comment[] = [];
 
-  
+  addComment(newComment: Comment) {
+    this.comments.push(newComment);
+  }
+
 }
