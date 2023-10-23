@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PageService } from './page.service';
+
 
 @Component({
   selector: 'app-root',
@@ -8,5 +8,4 @@ import { PageService } from './page.service';
 })
 export class AppComponent {
   title = 'photo-blog';
-  constructor(public pageService: PageService) { }
 }
