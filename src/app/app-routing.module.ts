@@ -6,7 +6,7 @@ import { PostDetailsComponent } from './pages/post-details/post-details.componen
 import { AdminComponent } from './pages/admin/admin.component';
 
 const routes: Routes = [
-    { path: 'home', component:  MainComponent},
+    { path: '', component:  MainComponent},
     { path: 'about', component: AboutComponent },
     { path: 'admin', component: AdminComponent },
     { path: 'post-details/:title', component: PostDetailsComponent },
