@@ -4,7 +4,6 @@ A blog for a photographer with a minimal clean aesthetic.
 
 ## Services
 - Comment section
-- 
 
 ## Components
 - Button
