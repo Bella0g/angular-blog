@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { postData } from "./post.data";
 
 interface post {
   id: number;
@@ -11,48 +12,27 @@ interface post {
   templateUrl: './post-list.component.html',
   styleUrls: ['./post-list.component.css']
 })
+
 export class PostListComponent {
-  PostList: post[] = [
-    {
-      id: 0,
-      title: 'Bar opening in paris',
-      imageUrl: './assets/bar/bar-3.jpeg',
-    },
-    {
-      id: 1,
-      title: 'Ballerina photoshoot in NYC',
-      imageUrl: './assets/ballerina/ballerina-4.jpeg',
-    },
-    {
-      id: 2,
-      title: 'Designer behind the sencse',
-      imageUrl: './assets/designer/designer-4.jpeg',
-    },
-  {
-    id: 3,
-    title: 'Fashion show in india',
-    imageUrl: './assets/india/india-hidden.jpeg',
-    },
-    {
-      id: 4,
-      title: 'Photoshoot for japans natinal day',
-      imageUrl: './assets/japan/japan-model.jpeg',
-    },
-    {
-      id: 5,
-      title: 'my friends new brand H33y',
-      imageUrl: './assets/new-brand/brand-2.jpeg',
-    },
-    {
-      id: 6,
-      title: 'water sirens',
-      imageUrl: './assets/water/water-3.jpeg',
-    },
-    {
-      id: 7,
-      title: 'Marketing images for a new play',
-      imageUrl: './assets/student/art-study.jpeg',
-    },
-  ];
+  PostList = postData;
+  constructor() { }
+
+  handleSubmit(imageUrl: string, title: string) {
+    if (!imageUrl || !title) {
+      console.error('Please fill out all fields.');
+      return;
+    }
+
+    const newPost = {
+      id: this.generateUniqueId(), 
+      imageUrl,
+      title,
+    };
+
+    this.PostList.push(newPost);
+  }
+  private generateUniqueId(): number {
+    return Date.now();
+  }
 }
 

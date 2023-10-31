@@ -2,9 +2,9 @@
     <div class="brand">NAMU JUN</div>
     <nav>
         <ul class="nav-links">
-            <li><a routerLink="" >Home</a></li>
+            <li><a routerLink="">Home</a></li>
             <li><a routerLink="/about">About</a></li>
-            <li><a routerLink="/admin">Admin</a></li>
+            <li><a routerLink="/admin" (click)="toggleUserStatus()">{{headerText}}</a></li>
         </ul>
     </nav>
 </header>
