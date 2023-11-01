@@ -10,12 +10,22 @@ import { Comment } from '../../interface/comments';
 
 export class CommentFormComponent {
   @Output() commentAdded = new EventEmitter<Comment>();
-  newComment: Comment = { author: '', text: '', date: new Date() };
+  newComment: Comment = {
+    id: 0,
+    body: '',
+    postId: 0,
+    user: { id: 0, username: '' },
+  };
 
   addComment() {
-    if (this.newComment.author && this.newComment.text) {
+    if (this.newComment.user.username && this.newComment.body) {
       this.commentAdded.emit(this.newComment);
-      this.newComment = { author: '', text: '', date: new Date() };
+      this.newComment = {
+        id: 0,
+        body: '',
+        postId: 0,
+        user: { id: 0, username: '' },
+      };
     }
   }
 }

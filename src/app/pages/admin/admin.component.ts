@@ -8,20 +8,35 @@ import { Post } from '../../interface/post';
   styleUrls: ['./admin.component.css']
 })
 export class AdminComponent {
-  
+
   savePost() {
     let post: string = "";
-    localStorage.setItem('newPostData',JSON.stringify(post));
+    localStorage.setItem('newPostData', JSON.stringify(post));
   }
 
-  newPost : Post = { title: '', content: '', imageUrl: ''}
-
-  //constructor(private postService: PostService) { }
+  newPost: Post = {
+    title: '',
+    content: '',
+    imageUrl: '',
+    id: 0,
+    creationDate: new Date(),
+    likes: 0,
+    dislikes: 0,
+    comments: ['']
+  };
 
   createPost() {
     if (this.newPost.title && this.newPost.content) {
-      //this.postService.addPost(this.newPost);
-      this.newPost = { title: '', content: '', imageUrl: '' };
+      this.newPost = {
+        title: '',
+        content: '',
+        imageUrl: '',
+        id: 0,
+        creationDate: new Date(),
+        likes: 0,
+        dislikes: 0,
+        comments: ['']
+      };
     }
   }
 

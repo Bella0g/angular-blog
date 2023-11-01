@@ -1,5 +1,5 @@
-<form (submit)="addComment()">
-    <input [(ngModel)]="newComment.author" placeholder="Namn">
-    <textarea [(ngModel)]="newComment.text" placeholder="Skriv din kommentar"></textarea>
-    <button type="submit">Skicka kommentar</button>
+<form class="comment-form" (submit)="addComment()">
+    <input [(ngModel)]="newComment.user" placeholder="Name">
+    <textarea [(ngModel)]="newComment.body" placeholder="write a comment.."></textarea>
+    <button type="submit">Send</button>
 </form>
