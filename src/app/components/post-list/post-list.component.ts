@@ -1,6 +1,9 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { postData } from "./post.data";
 
+// PostListComponent that will display a list of all blog posts.
+// This component should use the Post Service to retrieve the list of posts and display them in the template.
+
 interface post {
   id: number;
   title: string;

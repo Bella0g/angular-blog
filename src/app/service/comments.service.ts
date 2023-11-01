@@ -15,7 +15,7 @@ export class CommentsService {
   }
 
   private async loadApiData() {
-    let result = await fetch('https://dummyjson.com/comments?limit=10');
+    let result = await fetch('https://dummyjson.com/comments?limit=8');
     let json = await result.json();
     return json.comments;
   }
@@ -24,7 +24,8 @@ export class CommentsService {
     let comments = localStorage.getItem('comments');
     return !comments ? [] : JSON.parse(comments);
   }
-
+  
+  // Adding local and api comments to one array
   public get comments(): Comment[] {
     return this.apiComments.concat(this.localComments);
   }
