@@ -1,5 +1,5 @@
 import { Input, Component } from '@angular/core';
-import { Comment } from '../comment/comment.model';
+import { Comment } from '../../model/comment.model';
 
 
 export interface BlogPost {
