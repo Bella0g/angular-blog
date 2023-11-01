@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Post } from '../../model/post.model';
-// import { PostService } from '../service/post.service.ts';
+import { Post } from '../../interface/post';
+// Here you can add a new post
 
 @Component({
   selector: 'app-admin',

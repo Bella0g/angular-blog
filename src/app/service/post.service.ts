@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Post } from '../model/post.model';
+import { Post } from '../interface/post';
 
 @Injectable()
 export class PostService {
