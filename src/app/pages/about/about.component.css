@@ -20,13 +20,10 @@
     margin-bottom: 10px;
 }
 
-.about-container form {
+.form-group {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.about-container .form-group {
     margin-bottom: 10px;
 }
 

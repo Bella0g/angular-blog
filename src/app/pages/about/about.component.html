@@ -1,16 +1,19 @@
 <div class="about-container">
     <img src="./assets/me/me-2.jpeg" alt="image of me">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste rerum velit soluta minima fugit, illum aliquam
-        quidem maxime?</p>
+    <p>
+        I'm a freelance photographer with a passion for traveling. My camera is my constant companion as I journey to
+        diverse destinations, capturing the world's beauty and stories along the way. From bustling city streets to
+        remote landscapes, I thrive on the adventure of photographing unique moments and places. Let's work together to
+        create lasting visual memories and tell your story through the lens of my camera.
+    </p>
     <h2>Contact me</h2>
-    <form>
+    <form (ngSubmit)="onSubmit(form)" #form="ngForm">
         <div class="form-group">
             <label for="title">Title</label>
-            <input type="text" id="title" name="title" required>
-        </div>
-        <div class="form-group">
+            <input type="text" id="title" name="title" required [(ngModel)]="title">
+
             <label for="content">Question</label>
-            <textarea id="content" name="content" required></textarea>
+            <textarea id="content" name="content" required [(ngModel)]="content"></textarea>
         </div>
         <button type="submit">Send</button>
     </form>

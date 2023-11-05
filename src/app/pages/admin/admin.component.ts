@@ -25,19 +25,19 @@ export class AdminComponent {
     comments: ['']
   };
 
-  createPost() {
-    if (this.newPost.title && this.newPost.content) {
-      this.newPost = {
-        title: '',
-        content: '',
-        imageUrl: '',
-        id: 0,
-        creationDate: new Date(),
-        likes: 0,
-        dislikes: 0,
-        comments: ['']
-      };
-    }
-  }
+  // constructor(private http: HttpClient) { }
+
+  /*addPost() {
+    this.http.post('your-api-endpoint', this.newPost)
+      .subscribe((response) => {
+        console.log('Post added:', response);
+        this.newPost = {
+          imgUrl: '',
+          title: '',
+          body: ''
+        };
+      });
+      
+} */
 
 }
