@@ -30,7 +30,7 @@ export class CommentsService {
     return this.apiComments.concat(this.localComments);
   }
 
-  public addComment(body: string, post: Post, user: User) {
+/*  public addComment(body: string, post: Post, user: User) {
     this.localComments.push({
       id: this.apiComments.length + this.localComments.length + 1,
       body,
@@ -39,6 +39,6 @@ export class CommentsService {
     });
 
     localStorage.setItem('comments', JSON.stringify(this.localComments));
-  }
+  } */
 
 }

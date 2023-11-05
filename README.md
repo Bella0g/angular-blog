@@ -21,7 +21,6 @@ A blog for a photographer with a minimal clean aesthetic.
 - links (just a page with main photo,links to fake social media)
 
 
-
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
@@ -41,4 +40,28 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+
+## TODOS:
+
+- Create a navbar for both user and owner perspectives. The navbar should contain a button to switch between perspectives. KLAR
+
+### User perspective:
+- Create at least three pages: home, blog, and about me. KLAR
+
+- Home page should contain all blog posts. Each post should have a title and a thumbnail image. KLAR
+
+- Clicking on a post should take the user to a new page that shows the post in detail.
+Blog page should contain the post that the user clicked on from the home page. It should also show all the information about the post, including the content, creation date, likes, dislikes, and comments. 
+
+- Users should be able to add new comments anonymously and like/dislike the post. The page should have a button/link to navigate back to the home page.
+
+- About me page should contain information about the user and a form to contact them. Klar
+- The form should print all information to the console when submitted. 
+
+### Owner perspective:
+- Include everything from the user perspective. KLAR
+- Add a new page to create new posts.
+- All posts should have a structure that includes a title, thumbnail image, content, creation date, likes, dislikes, and comments. KLAR
+- Save the posts in localStorage to prevent data loss when reloading the app.
 

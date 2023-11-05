@@ -8,7 +8,7 @@ import { Post } from '../../interface/post';
   styleUrls: ['./admin.component.css']
 })
 export class AdminComponent {
-
+  
   savePost() {
     let post: string = "";
     localStorage.setItem('newPostData', JSON.stringify(post));
