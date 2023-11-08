@@ -1,5 +1,5 @@
 :host {
-    font-family: 'Roboto', 'Poppins', 'serif';
+    font-family: 'Open Sans', 'serif';
     margin: 0;
     padding: 0;
 }
@@ -36,12 +36,16 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #545454;
+    color: #292929;
     text-decoration: none;
 }
 
 nav ul li a:hover {
     color: #ccc;
+}
+
+p {
+    font-family: 'Open Sans', 'serif';
 }
 
 .hamburger-menu {

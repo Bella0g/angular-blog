@@ -14,6 +14,7 @@ import { BlogPostComponent } from './components/blog-post/blog-post.component';
 import { AdminComponent } from './pages/admin/admin.component';
 import { CommentComponent } from './components/comment/comment.component';
 import { CommentFormComponent } from './components/comment-form/comment-form.component';
+import { PostService } from './service/post.service';
 
 import { MatButtonModule } from "@angular/material/button";
 import { MatSelectModule } from '@angular/material/select';
@@ -40,10 +41,11 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     FormsModule,
     MatButtonModule,
     MatFormFieldModule,
-     MatInputModule,
-      MatSelectModule,
+    MatInputModule,
+    MatSelectModule,
+   
   ],
-  providers: [],
+  providers: [PostService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

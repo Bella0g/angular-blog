@@ -1,43 +1,50 @@
 import { Component } from '@angular/core';
 import { Post } from '../../interface/post';
-// Here you can add a new post
+import { PostService } from 'src/app/service/post.service';
 
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',
   styleUrls: ['./admin.component.css']
 })
+
 export class AdminComponent {
+  posts: Post[];
+  newPost: Post;
   
-  savePost() {
-    let post: string = "";
-    localStorage.setItem('newPostData', JSON.stringify(post));
+  constructor(private postService: PostService) {
+    this.posts = postService.getPosts();
+    this.newPost = {
+      postId: this.generateUniqueId(),
+      title: '',
+      imageUrl: '',
+      content: '',
+      creationDate: new Date(),
+      likes: 0,
+      dislikes: 0,
+      comment: []
+    };
   }
 
-  newPost: Post = {
-    title: '',
-    content: '',
-    imageUrl: '',
-    id: 0,
-    creationDate: new Date(),
-    likes: 0,
-    dislikes: 0,
-    comments: ['']
-  };
+  savePost() {
+    localStorage.setItem('newPostData', JSON.stringify(this.newPost));
+  }
 
-  // constructor(private http: HttpClient) { }
+  addPost() {
+    const postToAdd: Post = {
+      title: this.newPost.title,
+      content: this.newPost.content,
+      imageUrl: this.newPost.imageUrl,
+      postId: this.newPost.postId,
+      creationDate: this.newPost.creationDate,
+      likes: this.newPost.likes,
+      dislikes: this.newPost.dislikes,
+      comment: this.newPost.comment
+    };
+    this.postService.addPost(postToAdd);
+  }
 
-  /*addPost() {
-    this.http.post('your-api-endpoint', this.newPost)
-      .subscribe((response) => {
-        console.log('Post added:', response);
-        this.newPost = {
-          imgUrl: '',
-          title: '',
-          body: ''
-        };
-      });
-      
-} */
-
+  private generateUniqueId(): number {
+    return Date.now();
+  }
 }
