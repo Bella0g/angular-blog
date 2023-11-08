@@ -2,6 +2,10 @@ import { Component } from '@angular/core';
 import { Post } from '../../interface/post';
 import { PostService } from 'src/app/service/post.service';
 
+/**
+ * This component uses post from interface and postService to create new post
+*/
+
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',

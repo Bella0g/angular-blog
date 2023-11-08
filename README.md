@@ -57,11 +57,13 @@ Blog page should contain the post that the user clicked on from the home page. I
 * Users should be able to add new comments anonymously and like/dislike the post. The page should have a button/link to navigate back to the home page.
 
 * ~~About me page should contain information about the user and a form to contact them.~~
-* The form should print all information to the console when submitted. 
+* ~~The form should print all information to the console when submitted.~~
 
-### Owner perspective:
+### Owner perspective: 
 * ~~Include everything from the user perspective~~
-* Add a new page to create new posts.
+* ~~Add a new page to create new posts.~~
 * ~~All posts should have a structure that includes a title, thumbnail image, content, creation date, likes, dislikes, and comments.~~
-* Save the posts in localStorage to prevent data loss when reloading the app.
+* ~~Save the posts in localStorage to prevent data loss when reloading the app.~~
 
+### Buggs
+* Bild syns ej är till lagd i post list, måste fixas!

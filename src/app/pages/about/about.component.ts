@@ -1,5 +1,9 @@
-import { Component, NgModule } from '@angular/core';
-import { FormsModule, NgForm } from '@angular/forms';
+import { Component } from '@angular/core';
+import {  NgForm } from '@angular/forms';
+
+/**
+ * About component shows info about the blogger and the contact form that gets logged to the console.
+*/
 
 @Component({
   selector: 'app-about',
