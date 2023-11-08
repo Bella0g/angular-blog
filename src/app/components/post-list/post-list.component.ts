@@ -34,8 +34,10 @@ export class PostListComponent {
 
     this.PostList.push(newPost);
   }
+
   private generateUniqueId(): number {
     return Date.now();
   }
+
 }
 

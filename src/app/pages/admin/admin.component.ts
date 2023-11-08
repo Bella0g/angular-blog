@@ -26,6 +26,7 @@ export class AdminComponent {
     };
   }
 
+  // Save the new post object to local storage
   savePost() {
     localStorage.setItem('newPostData', JSON.stringify(this.newPost));
   }
@@ -42,6 +43,7 @@ export class AdminComponent {
       comment: this.newPost.comment
     };
     this.postService.addPost(postToAdd);
+    console.log('New post added:', postToAdd);
   }
 
   private generateUniqueId(): number {
