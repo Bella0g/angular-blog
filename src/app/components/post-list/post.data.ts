@@ -1,9 +1,12 @@
 import { Post } from "src/app/interface/post";
 
+/**
+ * Post data i used insted of an api to give the page some post to work with.
+*/
 export const postData: Post[] = [
     {
         postId: 0,
-        title: 'Bar opening in Paris',
+        title: 'A Night of Elegance at a Parisian Bar Opening',
         imageUrl: './assets/bar/bar-3.jpeg',
         content: "",
         creationDate: new Date(),
@@ -34,7 +37,7 @@ export const postData: Post[] = [
     },
     {
         postId: 3,
-        title: 'Fashion show in India',
+        title: 'A Kaleidoscope of Colors at an Indian Fashion Extravaganza',
         imageUrl: './assets/india/india-hidden.jpeg',
         content: "",
         creationDate: new Date(),
@@ -44,7 +47,7 @@ export const postData: Post[] = [
     },
     {
         postId: 4,
-        title: 'Photoshot for Japan\'s national day',
+        title: 'Capturing Tradition: A Photographic Ode to Japans National Day"',
         imageUrl: '../assets/japan/japan-model.jpeg',
         content: "",
         creationDate: new Date(),
@@ -74,7 +77,7 @@ export const postData: Post[] = [
     },
     {
         postId: 7,
-        title: 'Marketing images for a new play',
+        title: 'Up and cumming fashion brand in the making.',
         imageUrl: './assets/student/art-study.jpeg',
         content: "",
         creationDate: new Date(),

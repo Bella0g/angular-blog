@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-me',
@@ -6,8 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./me.component.css']
 })
 export class MeComponent {
+  constructor(private router: Router) { }
+  
   handleClick(): void {
-    // Perform the desired action here
     console.log('Image clicked!');
+    this.router.navigate(['/about']);
   }
 }
