@@ -25,7 +25,6 @@
               "src/assets"
             ],
             "styles": [
-              "src/minimal-theme.scss",
               "src/styles.css"
             ],
             "scripts": []

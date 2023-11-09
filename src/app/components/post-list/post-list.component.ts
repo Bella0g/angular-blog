@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { postData } from "./post.data";
+import { Router } from '@angular/router';
 
 
 /**
@@ -15,7 +16,12 @@ import { postData } from "./post.data";
 
 export class PostListComponent {
   PostList = postData;
-  constructor() { }
+
+  constructor(private router: Router) { }
+
+  goToPostDetails(postId: number) {
+    this.router.navigate(['/post', postId]);
+  }
 
   handleSubmit(imageUrl: string, title: string) {
     if (!imageUrl || !title) {

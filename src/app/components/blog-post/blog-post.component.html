@@ -1,5 +1,10 @@
 <div class="blog-post">
     <!-- Display the blog post content here -->
+    <div *ngIf="post">
+        <h2>{{ post.title }}</h2>
+        <img [src]="post.imageUrl" alt="{{ post.title }}">
+        <p>{{ post.content }}</p>
+    </div>
 
     <div class="comments">
         <h2>Comments</h2>

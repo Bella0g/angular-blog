@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 /**
- * This component houses all components form the first/main page.
+ * This component houses all components for the first/main page.
  */
 
 @Component({
