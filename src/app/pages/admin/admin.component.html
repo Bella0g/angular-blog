@@ -1,15 +1,15 @@
 <section class="admin-container">
     <h2>Create a New Blog Post</h2>
     <form #postForm="ngForm" class="admin-form">
-            <label for="title">Title</label>
-            <input type="text" id="title" name="title" [(ngModel)]="newPost.title" required>
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" [(ngModel)]="newPost.title" required>
 
-            <label for="image-url">Image URL:</label>
-            <input [(ngModel)]="newPost.imageUrl" type="text" name="image-url">
+        <label for="image-url">Image URL:</label>
+        <input [(ngModel)]="newPost.imageUrl" type="text" name="image-url">
 
-            <label for="content"></label>
-            <textarea id="content" name="content" [(ngModel)]="newPost.content" required
-                placeholder="Post content.."></textarea>
+        <label for="content"></label>
+        <textarea id="content" name="content" [(ngModel)]="newPost.content" required
+            placeholder="Post content.."></textarea>
     </form>
     <button type="submit" (click)="addPost()">Create Post</button>
 </section>
