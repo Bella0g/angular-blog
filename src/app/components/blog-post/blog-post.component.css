@@ -4,3 +4,17 @@
     justify-content: center;
     align-items: center;
 }
+
+.reactions {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.reactions p {
+    margin: 5px;
+}
+
+.content {
+    width: 65vw;
+}

@@ -37,10 +37,6 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
 
 ## TODOS:
 
@@ -51,8 +47,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 * ~~Home page should contain all blog posts. Each post should have a title and a thumbnail image.~~
 
-* Clicking on a post should take the user to a new page that shows the post in detail.
-Blog page should contain the post that the user clicked on from the home page. It should also show all the information about the post, including the content, creation date, likes, dislikes, and comments. 
+* Clicking on a post should take the user to a new page that shows the post in detail. Blog page should contain the post that the user clicked on from the home page. 
 
 * Users should be able to add new comments anonymously and like/dislike the post. The page should have a button/link to navigate back to the home page.
 
@@ -67,3 +62,4 @@ Blog page should contain the post that the user clicked on from the home page. I
 
 ### Buggs
 * Bild syns ej är till lagd i post list, måste fixas!
+* post details info ska laddas in dynamsiskt.

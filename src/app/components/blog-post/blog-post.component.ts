@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Comment } from '../../interface/comments';
 import { ActivatedRoute } from '@angular/router';
 import { postData } from '../post-list/post.data';
-import { PostService } from 'src/app/service/post.service';
 import { Post } from '../../interface/post'
 
 /**
@@ -15,31 +14,28 @@ import { Post } from '../../interface/post'
   templateUrl: './blog-post.component.html',
   styleUrls: ['./blog-post.component.css']
 })
-
 export class BlogPostComponent implements OnInit {
   post: Post = {
     postId: 0,
-    title: '',
-    imageUrl: '',
-    content: '',
+    title: 'A Night of Elegance at a Parisian Bar Opening',
+    imageUrl: './assets/bar/bar-3.jpeg',
+    content: "        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit quas corporis et quasi debitis ipsa, velit excepturi tempora odit cumque.",
     creationDate: new Date(),
     likes: 0,
     dislikes: 0,
     comment: [],
   };
   
-  title: string = '';
-  content: string = '';
-  
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.route.params.subscribe(params => {
       const postId = params['id'];
-      // Fetch the full post data using the post ID
+      // Find the post data using the post ID
+      const post = postData.find(p => p.postId === postId);
+      // Display the post data in the template
     });
   }
-
   comments: Comment[] = [];
 
   addComment(newComment: Comment) {

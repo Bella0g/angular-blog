@@ -1,10 +1,16 @@
 <div class="blog-post">
     <!-- Display the blog post content here -->
-    <div *ngIf="post">
-        <h2>{{ post.title }}</h2>
+    <section *ngIf="post">
+        <h1>{{ post.title }}</h1>
         <img [src]="post.imageUrl" alt="{{ post.title }}">
+        <div class="reactions">
+            <p>Likes: {{ post.likes }}</p>
+            <p>Comments: {{ post.comment.length }}</p>
+        </div>
+        <div class="content">
         <p>{{ post.content }}</p>
-    </div>
+        </div>
+    </section>
 
     <div class="comments">
         <h2>Comments</h2>
@@ -13,4 +19,6 @@
         </div>
         <app-comment-form (commentAdded)="addComment($event)"></app-comment-form>
     </div>
+
+    <app-footer></app-footer>
 </div>
