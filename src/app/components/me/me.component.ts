@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,  } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class MeComponent {
   constructor(private router: Router) { }
-  
+
   handleClick(): void {
     console.log('Image clicked!');
     this.router.navigate(['/about']);

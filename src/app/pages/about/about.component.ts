@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {  NgForm } from '@angular/forms';
+import { NgForm } from '@angular/forms';
 
 /**
  * About component shows info about the blogger and the contact form that gets logged to the console.
@@ -10,6 +10,7 @@ import {  NgForm } from '@angular/forms';
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css']
 })
+
 export class AboutComponent {
   title: string = '';
   content: string ='';
