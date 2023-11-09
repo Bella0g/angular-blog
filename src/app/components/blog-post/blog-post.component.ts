@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 import { Comment } from '../../interface/comments';
 
+/**
+ * This component will show the post details info based on what post the user clicked. 
+ * Here they can like and comment the posts.
+*/
 
 @Component({
   selector: 'app-blog-post',

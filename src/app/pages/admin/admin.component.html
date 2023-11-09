@@ -1,19 +1,19 @@
 <section class="admin-container">
     <h2>Create a New Blog Post</h2>
     <form #postForm="ngForm" class="admin-form">
-        <mat-form-field class="form-group">
-            <mat-label for="title">Title</mat-label>
+        <form class="form-group">
+            <label for="title">Title</label>
             <input matInput type="text" id="title" name="title" [(ngModel)]="newPost.title" required>
-        </mat-form-field>
-        <mat-form-field class="form-group">
-            <mat-label for="image-url">Image URL:</mat-label>
+        </form>
+        <form class="form-group">
+            <label for="image-url">Image URL:</label>
             <input matInput type="text"  name="image-url">
-        </mat-form-field>
-        <mat-form-field>
-            <mat-label for="content"></mat-label>
+        </form>
+        <form>
+            <label for="content"></label>
             <textarea matInput id="content" name="content" [(ngModel)]="newPost.content" required
                 placeholder="Post content.."></textarea>
-        </mat-form-field>
-        <button mat-raised-button type="submit" (click)="addPost()">Create Post</button>
+            </form>
+        <button type="submit" (click)="addPost()">Create Post</button>
     </form>
 </section>
