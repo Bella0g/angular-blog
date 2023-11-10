@@ -17,11 +17,12 @@ export class CommentComponent {
       content: '',
     });
   }
-
+/*
   addComment() {
     if (this.commentForm.valid) {
       const newComment = this.commentForm.value;
       this.commentsService.addComment(newComment.body, this.commentsService.getPost(), newComment.postId);
     }
   }
+  */
 }

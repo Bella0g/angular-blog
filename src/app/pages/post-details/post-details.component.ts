@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { postData } from '../../components/post-list/post.data';
 import { Post } from '../../interface/post'
@@ -16,10 +16,9 @@ import { Post } from '../../interface/post'
 export class PostDetailsComponent implements OnInit {
   post: Post = {
     postId: 0,
-    title: 'A Night of Elegance at a Parisian Bar Opening',
-    imageUrl: './assets/bar/bar-3.jpeg',
-    content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit quas corporis et quasi debitis ipsa, velit excepturi tempora odit cumque.",
-    creationDate: new Date(),
+    title: "",
+    imageUrl: "",
+    content: "",
     likes: 0,
     dislikes: 0,
     comment: [],
@@ -29,10 +28,10 @@ export class PostDetailsComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.subscribe(params => {
-      const postId = params['id'];
       // Find the post data using the post ID
-      const post = postData.find(p => p.postId === postId);
+      const postId = params['id'];
       // Display the post data in the template
+      this.post = postData.find(p => p.postId === postId);
     });
   }
 

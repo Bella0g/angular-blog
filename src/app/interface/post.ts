@@ -8,7 +8,6 @@ export interface Post {
     title: string;
     imageUrl: string;
     content: string;
-    creationDate: Date;
     likes: number;
     dislikes: number;
     comment: string[];
