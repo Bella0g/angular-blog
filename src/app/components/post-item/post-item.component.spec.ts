@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BlogPostComponent } from './blog-post.component';
+import { BlogPostComponent } from './post-item.component';
 
 describe('BlogPostComponent', () => {
   let component: BlogPostComponent;

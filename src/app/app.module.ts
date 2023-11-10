@@ -10,7 +10,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { MeComponent } from './components/me/me.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PostDetailsComponent } from './pages/post-details/post-details.component';
-import { BlogPostComponent } from './components/blog-post/blog-post.component';
+import { BlogPostComponent } from './components/post-item/post-item.component';
 import { AdminComponent } from './pages/admin/admin.component';
 import { CommentComponent } from './components/comment/comment.component';
 import { CommentFormComponent } from './components/comment-form/comment-form.component';

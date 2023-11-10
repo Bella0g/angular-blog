@@ -6,39 +6,27 @@ import { Post } from '../interface/post';
   providedIn: 'root'
 })
 export class CommentsService {
-  private apiComments: Comment[] = [];
   private localComments: Comment[] = [];
 
   constructor() {
-    this.loadApiData().then((comments) => (this.apiComments = comments));
     this.localComments = this.loadLocalData();
-  }
-
-  private async loadApiData() {
-    let result = await fetch('https://dummyjson.com/comments?limit=8');
-    let json = await result.json();
-    return json.comments;
   }
 
   private loadLocalData(): Comment[] {
     let comments = localStorage.getItem('comments');
     return !comments ? [] : JSON.parse(comments);
   }
-  
-  // Adding local and api comments to one array
+
   public get comments(): Comment[] {
-    return this.apiComments.concat(this.localComments);
+    return this.localComments;
   }
 
-/*  public addComment(body: string, post: Post, user: User) {
+  public addComment(body: string, post: Post): void {
     this.localComments.push({
-      id: this.apiComments.length + this.localComments.length + 1,
       body,
-      postId: post.id,
-      user: { id: user.id, username: user.username },
+      postId: post.postId,
     });
 
     localStorage.setItem('comments', JSON.stringify(this.localComments));
-  } */
-
+  }
 }

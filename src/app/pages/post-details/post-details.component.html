@@ -1,4 +1,16 @@
-<app-blog-post></app-blog-post>
+<div class="blog-post">
+    <!-- Display the blog post content here -->
+    <section *ngIf="post" class="post-container">
+        <h1>{{ post.title }}</h1>
+        <img [src]="post.imageUrl" alt="{{ post.title }}">
+        <div class="reactions">
+            <p>Likes: {{ post.likes }}</p>
+            <p>Dislikes: {{ post.dislikes }}</p>
+        </div>
+        <div class="content">
+            <p>{{ post.content }}</p>
+        </div>
+    </section>
+</div>
 
-<app-comment></app-comment>
-
+<app-footer></app-footer>

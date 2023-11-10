@@ -1,4 +1,7 @@
-<div class="comment">
-    <p><strong>{{ comment.user }}</strong></p>
-    <p>{{ comment.body }}</p>
-</div>
+<form>
+    <textarea formControlName="body"></textarea>
+    <select formControlName="post">
+        <option *ngFor="let post of commentsService.getPosts()">{{ post.id }}</option>
+    </select>
+    <button (click)="addComment()">Add Comment</button>
+</form>
