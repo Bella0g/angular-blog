@@ -54,7 +54,7 @@ export const postData: Post[] = [
     },
     {
         postId: 3,
-        title: 'A Tapestry of Hues: Reveling in the Vibrancy of an Indian Fashion Spectacle',
+        title: 'A Tapestry of Hues: Reveling in the Vibrancy of an Indian Fashion',
         imageUrl: './assets/india/india.jpg',
         content: `Dive into the world of hues at Chromatic Harmony, an Indian fashion extravaganza blending tradition with contemporary flair. Witness the runway bloom with diverse designs, where each ensemble is a fusion of cultural heritage and modern aesthetics.
                 Design Diversity: Chromatic Harmony celebrates the rich diversity of Indian design, from intricate hand-embroidery to bold contemporary silhouettes, showcasing the seamless blend of tradition and innovation.
@@ -109,7 +109,7 @@ export const postData: Post[] = [
     },
     {
         postId: 7,
-        title: 'Harmony Unleashed: The Student and the Subject in an Expressive Dance Performance',
+        title: 'Harmony Unleashed: An Expressive Dance Performance',
         imageUrl: './assets/student/art-study.jpeg',
         content: `Step into the world where movement becomes poetry, as we delve into an expressive dance performance that transcends the boundaries between the student and the subject. In this mesmerizing collaboration, the art of dance unfolds as a powerful dialogue, a visual narrative that encapsulates the profound connection between the performer and the theme.
                 The stage becomes a canvas for emotions as the student, adorned in balletic grace, brings life to the subject through expressive movements. Each plié, pirouette, and arabesque tells a story—a dance of joy, sorrow, and everything in between.
