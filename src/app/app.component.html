@@ -1,13 +1,12 @@
-<header>
-    <div class="brand">NAMU JUN</div>
+<header class="flex justify-between items-center bg-white p-5 mb-10 h-6vh border-b border-gray-300">
+    <div class="text-gray-800 text-lg font-roboto">NAMU JUN</div>
     <nav>
-        <ul class="nav-links">
-            <li><a routerLink="">Home</a></li>
-            <li><a routerLink="/about">About</a></li>
-            <li><a routerLink="/admin" (click)="toggleUserStatus()">{{headerText}}</a></li>
+        <ul class="flex flex-row gap-4 list-none p-0 m-0">
+            <li class="inline-block mr-4"><a routerLink="" class="text-gray-700 no-underline hover:text-gray-400">Home</a></li>
+            <li class="inline-block mr-4"><a routerLink="/about" class="text-gray-700 no-underline hover:text-gray-400">About</a></li>
+            <li class="inline-block"><a routerLink="/admin" (click)="toggleUserStatus()" class="text-gray-700 no-underline hover:text-gray-400">{{headerText}}</a></li>
         </ul>
     </nav>
 </header>
 <router-outlet></router-outlet>
 <app-footer></app-footer>
-

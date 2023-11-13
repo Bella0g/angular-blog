@@ -15,6 +15,11 @@ import { Post } from '../../interface/post';
 })
 
 export class PostDetailsComponent implements OnInit {
+  count: number = 0; 
+  counter(type: string) {
+    type === 'add' ? this.count++ : this.count--
+  }
+
   @Input() post: Post = {} as Post;
 
   constructor(private route: ActivatedRoute) { }
