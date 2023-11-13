@@ -46,7 +46,7 @@ export const postData: Post[] = [
                 Designer Spotlight: Step into the mind of the creative force behind H33y. Learn about their inspirations, challenges, and the passion driving their commitment to reshape the contemporary fashion landscape.
                 Capturing the Essence: Our lens captures not just garments but the spirit of H33y's unisex vision. Each photograph is a snapshot of a movement towards a more inclusive, diverse, and stylish future.
                 Join us in unveiling the secrets behind H33y's unisex revolution—a journey of creativity, innovation, and a pledge to redefine fashion for a new era.`,
-        additionalImageUrls: ['./assets/designer/'],
+        additionalImageUrls: ['./assets/designer/designer-1.jpeg'],
         likes: 0,
         dislikes: 0,
         comment: [],
@@ -55,7 +55,7 @@ export const postData: Post[] = [
     {
         postId: 3,
         title: 'A Tapestry of Hues: Reveling in the Vibrancy of an Indian Fashion Spectacle',
-        imageUrl: './assets/india/india-hidden.jpeg',
+        imageUrl: './assets/india/india-f-3.jpeg',
         content: `Dive into the world of hues at Chromatic Harmony, an Indian fashion extravaganza blending tradition with contemporary flair. Witness the runway bloom with diverse designs, where each ensemble is a fusion of cultural heritage and modern aesthetics.
                 Design Diversity: Chromatic Harmony celebrates the rich diversity of Indian design, from intricate hand-embroidery to bold contemporary silhouettes, showcasing the seamless blend of tradition and innovation.
                 Cultural Resonance: Beyond the garments, Chromatic Harmony resonates with cultural vibrancy, intertwining traditional music, dance, and artistry to create an immersive experience that embodies the soul of India.
@@ -63,9 +63,7 @@ export const postData: Post[] = [
                 Designer Insights: Gain insights into the creative minds shaping the Indian fashion landscape as designers share inspirations, collection stories, and the passion driving them to redefine fashion.
                 Lens on Culture: Our lens captures not just garments but the essence of Chromatic Harmony's celebration of culture—a dynamic interplay between tradition and modernity, encapsulating India's vibrant kaleidoscope.
                 Join us in exploring the vivid tapestry of Chromatic Harmony, where every step on the runway is a dance between heritage and contemporary style.`,
-        additionalImageUrls: [
-            
-        ],
+        additionalImageUrls: [ './assets/india/india-1.jpeg' ],
         likes: 0,
         dislikes: 0,
         comment: [],
@@ -74,18 +72,24 @@ export const postData: Post[] = [
         postId: 4,
         title: 'Capturing Tradition: A Photographic Ode to Japans National Day',
         imageUrl: '../assets/japan/japan-model.jpeg',
-        content: ``,
-        additionalImageUrls: [],
+        content: `Embarking on a visual odyssey through the heart of Japan, I aimed to capture the essence of Japan's National Day—a celebration where the intertwining threads of ancient customs and contemporary vibrancy create a mesmerizing tapestry.
+                the dance between tradition and modernity, there's a subtle art to crafting a unique style statement. Imagine donning a crisp white suit, a departure from the conventional, yet retaining the essence of tradition through a meticulously styled traditional hairstyle.
+                The stark simplicity of the white suit becomes a canvas, allowing the intricacies of a traditional hairstyle to shine. Each strand, each carefully arranged detail, becomes a nod to cultural heritage, seamlessly blending with the contemporary flair of the ensemble.
+                This fusion of elements creates a striking visual contrast—modernity meeting tradition in a harmonious convergence. The clean lines of the white suit accentuate the intricate beauty of the traditional hairstyle, resulting in a look that is both timeless and avant-garde.`,
+        additionalImageUrls: ['../assets/japan/japan-model-3.jpeg'],
         likes: 0,
         dislikes: 0,
         comment: [],
     },
     {
         postId: 5,
-        title: 'My friends new brand H33y',
+        title: 'H33y Debut: Unveiling Unisex Eco- Conscious Suits',
         imageUrl: '../assets/new-brand/brand-2.jpeg',
-        content: ``,
-        additionalImageUrls: [],
+        content: `Step behind the scenes of H33y's first marketing photoshoot, showcasing a collection of unisex suits crafted with eco-conscious design. Explore the brand's commitment to sustainable fashion, where style meets environmental responsibility. This is the dawn of a new era in fashion—where conscious choices and contemporary elegance coalesce.
+                Explore the details of each suit, from the fabric selection to the meticulous craftsmanship. H33y's commitment to eco-friendly design is evident in every stitch, proving that fashion can be both chic and environmentally responsible.
+                Our lens delves into the soul of H33y's ethos, capturing not just garments but the spirit of a brand that harmonizes with the environment. Each photograph tells a story of conscious style—where fashion is a statement, and sustainability is a way of life.
+                Join us in applauding H33y's debut marketing photoshoot—a visual testament to the brand's commitment to unisex elegance, sustainability, and a future where fashion and conscience walk hand in hand.`,
+        additionalImageUrls: ['../assets/new-brand/brand-3.jpeg'],
         likes: 0,
         dislikes: 0,
         comment: [],

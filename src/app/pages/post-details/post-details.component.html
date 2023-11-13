@@ -1,23 +1,23 @@
-<div class="blog-post">
+<div class="flex justify-center items-center min-h-screen">
     <!-- Display the blog post content here -->
-    <section *ngIf="post" class="post-container">
-        <h1>{{ post.title }}</h1>
+    <section *ngIf="post" class="post-container max-w-2xl p-4">
+        <h1 class="text-3xl font-bold mb-4">{{ post.title }}</h1>
 
-        <div class="max-w-xl">
-        <img [src]="post.imageUrl" alt="{{ post.title }}">
+        <div class="max-w-full mb-4">
+            <img [src]="post.imageUrl" alt="{{ post.title }}" class="w-full h-auto">
         </div>
 
-        <div class="reactions">
+        <div class="reactions mb-4">
             <p>Likes: {{ post.likes }}</p>
             <p>Dislikes: {{ post.dislikes }}</p>
         </div>
-        <div class="content">
+        <div>
             <p>{{ post.content }}</p>
         </div>
-        <div>
-        <img [src]="post.additionalImageUrls" alt="{{ post.additionalImageUrls }}">
-        </div>
-    </section>
-    <app-comment-form></app-comment-form>
-</div>
 
+        <div class="max-w-full mb-4">
+            <img [src]="post.additionalImageUrls" alt="{{ post.additionalImageUrls }}" class="w-full h-auto">
+        </div>
+        <!-- <app-comment-form></app-comment-form> -->
+    </section>
+</div>
