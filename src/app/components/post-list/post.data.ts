@@ -55,7 +55,7 @@ export const postData: Post[] = [
     {
         postId: 3,
         title: 'A Tapestry of Hues: Reveling in the Vibrancy of an Indian Fashion Spectacle',
-        imageUrl: './assets/india/india-f-3.jpeg',
+        imageUrl: './assets/india/india.jpg',
         content: `Dive into the world of hues at Chromatic Harmony, an Indian fashion extravaganza blending tradition with contemporary flair. Witness the runway bloom with diverse designs, where each ensemble is a fusion of cultural heritage and modern aesthetics.
                 Design Diversity: Chromatic Harmony celebrates the rich diversity of Indian design, from intricate hand-embroidery to bold contemporary silhouettes, showcasing the seamless blend of tradition and innovation.
                 Cultural Resonance: Beyond the garments, Chromatic Harmony resonates with cultural vibrancy, intertwining traditional music, dance, and artistry to create an immersive experience that embodies the soul of India.
@@ -63,7 +63,7 @@ export const postData: Post[] = [
                 Designer Insights: Gain insights into the creative minds shaping the Indian fashion landscape as designers share inspirations, collection stories, and the passion driving them to redefine fashion.
                 Lens on Culture: Our lens captures not just garments but the essence of Chromatic Harmony's celebration of culture—a dynamic interplay between tradition and modernity, encapsulating India's vibrant kaleidoscope.
                 Join us in exploring the vivid tapestry of Chromatic Harmony, where every step on the runway is a dance between heritage and contemporary style.`,
-        additionalImageUrls: [ './assets/india/india-1.jpeg' ],
+        additionalImageUrls: [ './assets/india/india-f-3.jpeg' ],
         likes: 0,
         dislikes: 0,
         comment: [],
@@ -109,7 +109,7 @@ export const postData: Post[] = [
     },
     {
         postId: 7,
-        title: '',
+        title: 'Harmony Unleashed: The Student and the Subject in an Expressive Dance Performance',
         imageUrl: './assets/student/art-study.jpeg',
         content: `Step into the world where movement becomes poetry, as we delve into an expressive dance performance that transcends the boundaries between the student and the subject. In this mesmerizing collaboration, the art of dance unfolds as a powerful dialogue, a visual narrative that encapsulates the profound connection between the performer and the theme.
                 The stage becomes a canvas for emotions as the student, adorned in balletic grace, brings life to the subject through expressive movements. Each plié, pirouette, and arabesque tells a story—a dance of joy, sorrow, and everything in between.

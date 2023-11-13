@@ -1,10 +1,10 @@
 <!-- Grid to render the images and titles from post data. -->
-<div class="grid-container">
-      <ul class="image-grid">
-            <li class="image-grid-item" *ngFor="let post of PostList">
-                  <a [routerLink]="['./post-details', post.postId]">
-                        <img [src]="post.imageUrl" alt="{{ post.title }}" />
-                        <span>{{ post.title }}</span>
+<div  class="flex justify-center items-center">
+      <ul class="grid-container grid grid-cols-2 gap-4 list-none p-0 m-0">
+            <li class="image-grid-item max-w-xs" *ngFor="let post of PostList">
+                  <a [routerLink]="['./post-details', post.postId]" class="flex flex-col items-center text-center">
+                        <img [src]="post.imageUrl" alt="{{ post.title }}" class="max-w-full shadow-md mb-2"/>
+                        <span class="text-base font-medium">{{ post.title }}</span>
                   </a>
             </li>
       </ul>
