@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { postData } from "./post.data";
 import { Router } from '@angular/router';
 
-
 /**
  * This component represents a list of posts and handles the display and interaction logic for the list.
  * The postData import is used to fetch the data for the post list.
@@ -34,7 +33,7 @@ export class PostListComponent {
       title: '', 
       imageUrl: '',
       content: '',
-      creationDate: new Date(),
+      additionalImageUrls: [],
       likes: 0,
       dislikes: 0,
       comment: [],

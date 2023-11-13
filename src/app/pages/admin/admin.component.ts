@@ -23,6 +23,7 @@ export class AdminComponent {
       title: '',
       imageUrl: '',
       content: '',
+      additionalImageUrls: [],
       likes: 0,
       dislikes: 0,
       comment: []
@@ -40,6 +41,7 @@ export class AdminComponent {
       content: this.newPost.content,
       imageUrl: this.newPost.imageUrl,
       postId: this.newPost.postId,
+      additionalImageUrls: this.newPost.additionalImageUrls,
       likes: this.newPost.likes,
       dislikes: this.newPost.dislikes,
       comment: this.newPost.comment

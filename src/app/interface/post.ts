@@ -8,6 +8,7 @@ export interface Post {
     title: string;
     imageUrl: string;
     content: string;
+    additionalImageUrls: string[];
     likes: number;
     dislikes: number;
     comment: string[];
