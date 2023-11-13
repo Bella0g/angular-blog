@@ -30,7 +30,7 @@ export const postData: Post[] = [
                 The photographer's lens skillfully documented not only the physical prowess of the dancer but also the unspoken dialogue between her and the dynamic urban environment.
                 In the final frames, as the sun dipped below the skyline, the ballerina's silhouette against the city lights encapsulated the essence of this urban ballet—a timeless fusion of grace and energy, where the beauty of dance met the dynamic spirit of New York City. 
                 Join us in savoring the magic of this ballet amidst skyscrapers, where the grace of movement collided with the rhythm of the city, creating a visual masterpiece that transcends both time and space. `,
-        additionalImageUrls: [],
+        additionalImageUrls: ['./assets/ballerina/ballerina-3.jpeg'],
         likes: 0,
         dislikes: 0,
         comment: [],
@@ -46,7 +46,7 @@ export const postData: Post[] = [
                 Designer Spotlight: Step into the mind of the creative force behind H33y. Learn about their inspirations, challenges, and the passion driving their commitment to reshape the contemporary fashion landscape.
                 Capturing the Essence: Our lens captures not just garments but the spirit of H33y's unisex vision. Each photograph is a snapshot of a movement towards a more inclusive, diverse, and stylish future.
                 Join us in unveiling the secrets behind H33y's unisex revolution—a journey of creativity, innovation, and a pledge to redefine fashion for a new era.`,
-        additionalImageUrls: [],
+        additionalImageUrls: ['./assets/designer/'],
         likes: 0,
         dislikes: 0,
         comment: [],
@@ -72,7 +72,7 @@ export const postData: Post[] = [
     },
     {
         postId: 4,
-        title: 'Capturing Tradition: A Photographic Ode to Japans National Day"',
+        title: 'Capturing Tradition: A Photographic Ode to Japans National Day',
         imageUrl: '../assets/japan/japan-model.jpeg',
         content: ``,
         additionalImageUrls: [],
