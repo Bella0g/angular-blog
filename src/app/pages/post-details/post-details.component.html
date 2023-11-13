@@ -2,7 +2,11 @@
     <!-- Display the blog post content here -->
     <section *ngIf="post" class="post-container">
         <h1>{{ post.title }}</h1>
+
+        <div class="max-w-xl">
         <img [src]="post.imageUrl" alt="{{ post.title }}">
+        </div>
+
         <div class="reactions">
             <p>Likes: {{ post.likes }}</p>
             <p>Dislikes: {{ post.dislikes }}</p>
@@ -13,4 +17,3 @@
     </section>
 </div>
 
-<app-footer></app-footer>
