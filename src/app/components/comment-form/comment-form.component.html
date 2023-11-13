@@ -1,4 +1,12 @@
-<form class="comment-form" (submit)="addComment()">
-    <textarea [(ngModel)]="newComment.body" placeholder="write a comment.."></textarea>
-    <button type="submit">Send</button>
-</form>
+<div class="comments-container">
+    <!-- Display existing comments -->
+    <div *ngFor="let comment of comments" class="comment">
+        <p>{{ comment.body }}</p>
+    </div>
+
+    <!-- Comment Form -->
+    <form class="comment-form" (submit)="addComment()">
+        <textarea formControlName="body" placeholder="Write a comment..."></textarea>
+        <button type="submit">Send</button>
+    </form>
+</div>

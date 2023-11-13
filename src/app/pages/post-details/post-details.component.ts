@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { postData } from '../../components/post-list/post.data';
-import { Post } from '../../interface/post'
+import { Post } from '../../interface/post';
 
 /**
  * This component will show the post details info based on what post the user clicked. 
@@ -13,16 +13,9 @@ import { Post } from '../../interface/post'
   templateUrl: './post-details.component.html',
   styleUrls: ['./post-details.component.css']
 })
+
 export class PostDetailsComponent implements OnInit {
-  post: Post = {
-    postId: 0,
-    title: "",
-    imageUrl: "",
-    content: "",
-    likes: 0,
-    dislikes: 0,
-    comment: [],
-  };
+  @Input() post: Post = {} as Post;
 
   constructor(private route: ActivatedRoute) { }
 
