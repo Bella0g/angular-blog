@@ -2,7 +2,7 @@
 <div class="grid-container">
       <ul class="image-grid">
             <li class="image-grid-item" *ngFor="let post of PostList">
-                  <a [routerLink]="['./post-details', post.title]">
+                  <a [routerLink]="['./post-details', post.postId]">
                         <img [src]="post.imageUrl" alt="{{ post.title }}" />
                         <span>{{ post.title }}</span>
                   </a>

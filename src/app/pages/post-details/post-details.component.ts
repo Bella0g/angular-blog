@@ -22,9 +22,13 @@ export class PostDetailsComponent implements OnInit {
   ngOnInit() {
     this.route.params.subscribe(params => {
       // Find the post data using the post ID
-      const postId = params['id'];
+      const postId: number = +params['id'];
+      console.log('postId from route:', postId);
+
       // Display the post data in the template
-      this.post = postData.find(p => p.postId === postId);
+      this.post = postData.find(p => p.postId === postId) || {} as Post;
+
+      console.log('Post:', this.post);
     });
   }
 

@@ -40,6 +40,10 @@ export class PostListComponent {
       comment: [],
     };
 
+    // Navigate to the post details page for the new post
+    this.router.navigate(['/post-details', newPost.postId]);
+
+    // Push the new post to the PostList
     this.PostList.push(newPost);
   }
 
