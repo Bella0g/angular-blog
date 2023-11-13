@@ -96,20 +96,27 @@ export const postData: Post[] = [
     },
     {
         postId: 6,
-        title: 'Water sirens',
+        title: 'Behind Water Sirens: An Underwater Photoshoot',
         imageUrl: './assets/water/water-3.jpeg',
-        content: ``,
-        additionalImageUrls: [],
+        content: `Explore the depths of the upcoming indie album Water Sirens as the band immerses themselves in an enchanting underwater photoshoot.The visual narrative captures the essence of the music, offering a glimpse into the mysterious beauty and raw emotions that define the album.
+                The band's persona transforms into aquatic sirens, embracing the beauty and grace of underwater movement. The visuals become a narrative—an underwater odyssey that mirrors the album's journey through deep emotions and sonic exploration.
+                The underwater setting serves as a metaphor for the depths explored in 'Water Sirens'—both musically and thematically. It's a plunge into the abyss of emotions, and our photographs aim to capture the raw, unfiltered essence that the band has woven into each track.
+                Explore the meticulous planning and creative process behind the underwater shoot. From choosing the right aquatic location to the challenges of capturing the perfect shot beneath the surface, witness the making of visual waves that echo the band's sonic ripples.`,
+        additionalImageUrls: ['./assets/water/water-5.jpeg'],
         likes: 0,
         dislikes: 0,
         comment: [],
     },
     {
         postId: 7,
-        title: 'Up and cumming fashion brand in the making.',
+        title: '',
         imageUrl: './assets/student/art-study.jpeg',
-        content: ``,
-        additionalImageUrls: [],
+        content: `Step into the world where movement becomes poetry, as we delve into an expressive dance performance that transcends the boundaries between the student and the subject. In this mesmerizing collaboration, the art of dance unfolds as a powerful dialogue, a visual narrative that encapsulates the profound connection between the performer and the theme.
+                The stage becomes a canvas for emotions as the student, adorned in balletic grace, brings life to the subject through expressive movements. Each plié, pirouette, and arabesque tells a story—a dance of joy, sorrow, and everything in between.
+                As the student embodies the subject, the theme comes alive. The subject isn't merely an idea but a living, breathing entity, conveyed through the dancer's nuanced portrayal. The performance becomes a brushstroke on the canvas of the stage—a moving masterpiece.
+                Through leaps and twirls, the student navigates the emotional landscape of the subject. It's a journey of self-discovery and empathy, where the dancer merges their own emotions with those of the subject, creating a profound connection that resonates with the audience.
+                In this expressive dance, the boundary between the student and the subject blurs. The performer doesn't merely interpret; they become an extension of the subject, forging a unique identity that transcends the traditional roles of dancer and theme.`,
+        additionalImageUrls: ['./assets/student/art-student-5.jpeg'],
         likes: 0,
         dislikes: 0,
         comment: [],
