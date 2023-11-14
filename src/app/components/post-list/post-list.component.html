@@ -1,5 +1,5 @@
 <!-- Grid to render the images and titles from post data. -->
-<div  class="flex justify-center items-center text-slate-800">
+<div  class="flex justify-center items-center text-slate-800 mb-10">
       <ul class="grid-container grid grid-cols-2 gap-4 list-none p-0 m-0 mb-3">
             <li class="image-grid-item max-w-xs" *ngFor="let post of PostList">
                   <a [routerLink]="['./post-details', post.postId]" class="flex flex-col items-center text-center m-1">

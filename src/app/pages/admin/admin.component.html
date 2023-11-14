@@ -1,7 +1,7 @@
-<section class="flex first items-center flex-col min-h-screen">
+<section class="flex first items-center flex-col min-h-full">
     <h2 class="text-3xl font-semibold mb-4">Create a New Blog Post</h2>
 
-    <form class="mb-10 p-2.5 w-full flex flex-col shadow-lg max-w-xl">
+    <form class="p-2.5 w-full flex flex-col shadow-lg max-w-2xl">
         <input type="text" id="title" name="title" [(ngModel)]="newPost.title" required placeholder="Title.."
             class="p-2 border border-gray-400 rounded mt-5">
 
@@ -14,4 +14,5 @@
             <button type="submit" class="bg-gray-900 text-gray-50 rounded-sm px-3.5 pb-2 cursor-pointer">Send</button>
         </div>
     </form>
+    <img src="" alt="">
 </section>
