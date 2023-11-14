@@ -15,10 +15,12 @@ import { PostService } from 'src/app/service/post.service';
 export class AdminComponent {
   posts: Post[];
   newPost: Post;
-  
+
   constructor(private postService: PostService) {
+    // Retrieve existing posts from the post service
     this.posts = postService.getPosts();
     this.newPost = {
+      // Generate a unique ID for the new post
       postId: this.generateUniqueId(),
       title: '',
       imageUrl: '',
@@ -35,6 +37,7 @@ export class AdminComponent {
     localStorage.setItem('newPostData', JSON.stringify(this.newPost));
   }
 
+  // Add a new post
   addPost() {
     const postToAdd: Post = {
       title: this.newPost.title,
@@ -46,10 +49,10 @@ export class AdminComponent {
       dislikes: this.newPost.dislikes,
       comment: this.newPost.comment
     };
+    // Add the new post using the post service
     this.postService.addPost(postToAdd);
-    console.log('New post added:', postToAdd);
   }
-
+  // Generate a unique ID for the new post
   private generateUniqueId(): number {
     return Date.now();
   }
