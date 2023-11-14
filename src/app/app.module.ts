@@ -14,6 +14,7 @@ import { BlogPostComponent } from './components/post-item/post-item.component';
 import { AdminComponent } from './pages/admin/admin.component';
 import { CommentFormComponent } from './components/comment-form/comment-form.component';
 import { PostService } from './service/post.service';
+import { ReactBtnComponent } from './components/react-btn/react-btn.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { PostService } from './service/post.service';
     BlogPostComponent,
     AdminComponent,
     CommentFormComponent,
+    ReactBtnComponent,
   ],
   imports: [
     BrowserModule,

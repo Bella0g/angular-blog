@@ -15,16 +15,6 @@ import { Post } from '../../interface/post';
 })
 
 export class PostDetailsComponent implements OnInit {
-  dislike: number = 0; 
-  like: number = 0;
-  
-  counter(type: string) {
-    if (type === 'add') {
-      this.like++;
-    } else if (type === 'minus') {
-      this.dislike++;
-    }
-  }
 
   @Input() post: Post = {} as Post;
 
