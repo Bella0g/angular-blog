@@ -1,12 +1,16 @@
 <div class="flex first items-center text-center flex-col">
-    <img src="./assets/me/me-2.jpeg" alt="image of me" class="mb-4">
+
+    <img class="shadow-md" src="./assets/me/me-2.jpeg" alt="image of me" class="mb-4">
+
     <p class="text-base mb-6 max-w-3xl">
         I'm a freelance photographer with a passion for traveling. My camera is my constant companion as I journey to
         diverse destinations, capturing the world's beauty and stories along the way. From bustling city streets to
         remote landscapes, I thrive on the adventure of photographing unique moments and places. Let's work together to
         create lasting visual memories and tell your story through the lens of my camera.
     </p>
-    <h3 class="text-3xl font-semibold mb-4">Contact me</h3>
+
+    <h3 class="text-3xl font-medium font-mono mb-4">Contact me</h3>
+
     <form (ngSubmit)="onSubmit(form)" #form="ngForm" class="mb-10 p-2.5 w-full max-w-md shadow-lg">
         <div class="flex flex-col mb-2 w-full">
             <input type="text" id="title" name="title" placeholder="Title..." required [(ngModel)]="title"

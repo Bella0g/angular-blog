@@ -1,7 +1,9 @@
 <header class="flex justify-between items-center bg-white p-5 mb-10 h-6vh border-b border-gray-300">
-    <div class="text-gray-800 text-lg font-roboto">NAMU JUN</div>
+    <div class="text-gray-700 text-xl font-roboto">
+        <p>NAMU JUN</p>
+    </div>
     <nav>
-        <ul class="flex flex-row gap-4 list-none p-0 m-0">
+        <ul class="flex flex-row gap-4 text-lg list-none p-0 m-0">
             <li class="inline-block mr-4"><a routerLink="" class="text-gray-700 no-underline hover:text-gray-400">Home</a></li>
             <li class="inline-block mr-4"><a routerLink="/about" class="text-gray-700 no-underline hover:text-gray-400">About</a></li>
             <li class="inline-block"><a routerLink="/admin" (click)="toggleUserStatus()" class="text-gray-700 no-underline hover:text-gray-400">{{headerText}}</a></li>

@@ -1,18 +1,1 @@
-.hamburger-menu {
-    display: none;
-    /* Initially hide the hamburger menu */
-    cursor: pointer;
-}
 
-/* Media query for mobile */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        /* Hide the navigation links by default */
-    }
-
-    .hamburger-menu {
-        display: block;
-        /* Display the hamburger menu on mobile */
-    }
-}
