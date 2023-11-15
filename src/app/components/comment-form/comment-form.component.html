@@ -9,7 +9,8 @@
             class="bg-gray-900 text-gray-50 rounded-sm px-6 py-2.5 mb-4 cursor-pointer">Comment</button>
     </div>
     <!-- Display existing comments -->
-    <div *ngFor="let comment of postComments" class="px-2 border border-gray-300">
+    <div *ngFor="let comment of postComments" class="px-2 mb-2 border border-gray-300">
         <p>{{ comment.body }}</p>
+        <p> {{comment.timeStamp | date: 'short' }} </p>
     </div>
 </div>
