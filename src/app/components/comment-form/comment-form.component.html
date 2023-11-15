@@ -1,12 +1,15 @@
-<div class="flex flex-col mb-4">
+<div class="flex flex-col mt-6 mb-6">
     <hr>
-    <h4 class="text-lg">Comments</h4>
-    <!-- Comment Form -->
-        <textarea [(ngModel)]="comment" class="p-2 border border-gray-400 rounded mt-5" placeholder="Write a comment..."></textarea>
-        <button (click)="addComment()" type="submit" class="bg-gray-900 text-gray-50 rounded-sm px-3.5 pb-2 cursor-pointer">Comment</button>
-    <hr>
+    <div class="w-full flex flex-col items-center mb-6 mt-4 border-b border-gray-300">
+        <h4 class="text-lg">Comments</h4>
+        <!-- Comment Form -->
+        <textarea [(ngModel)]="comment" class="p-2 border border-gray-400 rounded mb-4"
+            placeholder="Write a comment..."></textarea>
+        <button (click)="addComment()" type="submit"
+            class="bg-gray-900 text-gray-50 rounded-sm px-6 py-2.5 mb-4 cursor-pointer">Comment</button>
+    </div>
     <!-- Display existing comments -->
-    <div *ngFor="let comments of postComments" class="mx-2">
-        <p>{{ comments }}</p>
+    <div *ngFor="let comment of postComments" class="px-2 border border-gray-300">
+        <p>{{ comment.body }}</p>
     </div>
 </div>

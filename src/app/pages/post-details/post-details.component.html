@@ -16,6 +16,6 @@
         <div class="max-w-full mb-4">
             <img [src]="post.additionalImageUrls" alt="{{ post.additionalImageUrls }}" class="w-full h-auto">
         </div>
-        <app-comment-form></app-comment-form>
+        <app-comment-form [postId]="post.postId"></app-comment-form>
     </section>
 </div>

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { postData } from '../post-list/post.data';
 import { Comment } from '../../interface/comments';
 
 @Component({
@@ -9,13 +10,19 @@ import { Comment } from '../../interface/comments';
 
 
 export class CommentFormComponent {
-  comment: string = "hello"; 
-  postComments: string[] = [];
+  @Input() postId: number = 0;
+
+  comment: string = "";
+  postComments: Comment[] = [];
 
   addComment() {
-    if (this.comment.trim() !== "") { 
-    this.postComments.push(this.comment);
-    this.comment = "";
+    if (this.comment.trim() !== "") {
+      const newComment: Comment = {
+        body: this.comment,
+        postId: this.postId
+      };
+      this.postComments.push(newComment);
+      this.comment = "";
     }
   }
 }
