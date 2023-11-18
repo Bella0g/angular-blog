@@ -4,7 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 
 import { NgIconsModule } from '@ng-icons/core';
-import { bootstrapInstagram } from '@ng-icons/bootstrap-icons';
+import { bootstrapInstagram, bootstrapTwitter, bootstrapLinkedin } from '@ng-icons/bootstrap-icons';
 
 import { AppComponent } from './app.component';
 import { MainComponent } from './pages/main/main.component';
@@ -37,7 +37,7 @@ import { ReactBtnComponent } from './components/react-btn/react-btn.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    NgIconsModule.withIcons({ bootstrapInstagram,  }),
+    NgIconsModule.withIcons({ bootstrapInstagram, bootstrapLinkedin ,bootstrapTwitter  }),
   ],
   providers: [PostService],
   bootstrap: [AppComponent]

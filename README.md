@@ -2,23 +2,37 @@
 
 A blog for a photographer with a minimal clean aesthetic.
 
-## Services
-- Comment section
+![Alt text](/client/public/chat.jpeg)
+![Alt text](/client/public/chat-2.jpeg)
 
-## Components
-- Button
-- Header
-- photogaper img (on click se about page)
-- List of all the links to different posts, with images and h3 text.
-- footer
+## Features
+- Mobile compatible.
+- User-friendly minimal design.
+- Comment timestamps.
 
+## Technologies Used
+- Angular
+- Typescript
+- tailwind css
 
-### Pages
-- Login - with two buttons for creator and for user. with an img on the side.
-- Main page
-- Post details
-- about page
-- links (just a page with main photo,links to fake social media)
+## Getting Started
+Follow these instructions to set up and run the project on your local machine.
+
+### Prerequisites
+You need to have Node.js and npm (Node Package Manager) installed on your system. You can download and install them from nodejs.org.
+
+### Installation
+1. Clone the repository to your local machine using:
+    ```html
+    git clone https://github.com/Bella0g/angular-blog.git
+    
+2. Navigate to the project directory:
+    ```html
+   cd angular-blog
+    
+3. Install the project dependencies:
+    ```html
+   npm install
 
 
 ## Development server
@@ -38,28 +52,3 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 
-## TODOS:
-
-* ~~Create a navbar for both user and owner perspectives. The navbar should contain a button to switch between perspectives.~~
-
-### User perspective:
-* ~~Create at least three pages: home, blog, and about me.~~
-
-* ~~Home page should contain all blog posts. Each post should have a title and a thumbnail image.~~
-
-* Clicking on a post should take the user to a new page that shows the post in detail. Blog page should contain the post that the user clicked on from the home page. 
-
-* Users should be able to add new comments anonymously and like/dislike the post. The page should have a button/link to navigate back to the home page.
-
-* ~~About me page should contain information about the user and a form to contact them.~~
-* ~~The form should print all information to the console when submitted.~~
-
-### Owner perspective: 
-* ~~Include everything from the user perspective~~
-* ~~Add a new page to create new posts.~~
-* ~~All posts should have a structure that includes a title, thumbnail image, content, creation date, likes, dislikes, and comments.~~
-* ~~Save the posts in localStorage to prevent data loss when reloading the app.~~
-
-### Buggs
-* Bild syns ej är till lagd i post list, måste fixas!
-* post details info ska laddas in dynamsiskt.
