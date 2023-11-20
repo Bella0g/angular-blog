@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { postData } from "./post.data";
 import { Router } from '@angular/router';
+import { PostService } from 'src/app/service/post.service';
 
 /**
  * This component represents a list of posts and handles the display and interaction logic for the list.
@@ -16,7 +17,7 @@ import { Router } from '@angular/router';
 export class PostListComponent {
   PostList = postData;
 
-  constructor(private router: Router) { }
+  constructor(private postService: PostService, private router: Router) { }
 
   goToPostDetails(postId: number) {
     this.router.navigate(['/post', postId]);
@@ -33,17 +34,16 @@ export class PostListComponent {
       title: '', 
       imageUrl: '',
       content: '',
-      additionalImageUrls: [],
       likes: 0,
       dislikes: 0,
       comment: [],
     };
 
+    // Add the new post using the post service
+    this.postService.addPost(newPost);
+
     // Navigate to the post details page for the new post
     this.router.navigate(['/post-details', newPost.postId]);
-
-    // Push the new post to the PostList
-    this.PostList.push(newPost);
   }
 
   private generateUniqueId(): number {

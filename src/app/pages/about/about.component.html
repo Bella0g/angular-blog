@@ -1,6 +1,6 @@
 <div class="flex first items-center text-center flex-col">
-    <div class="shadow-md max-w-xl mb-4">
-        <img class="" src="./assets/me/me-2.jpeg" alt="image of me" class="mb-4">
+    <div class=" max-w-xl mb-4">
+        <img class="shadow-md" src="./assets/me/me-2.jpeg" alt="image of me" class="mb-4">
     </div>
 
     <p class="text-base mb-6 max-w-3xl">
@@ -10,7 +10,7 @@
         create lasting visual memories and tell your story through the lens of my camera.
     </p>
 
-    <h3 class="text-3xl font-medium font-mono mb-4">Contact me</h3>
+    <h3 class="text-2xl font-mono mb-4">Contact me</h3>
 
     <form (ngSubmit)="onSubmit(form)" #form="ngForm" class="mb-10 p-2.5 w-full max-w-md shadow-md bg-white">
         <div class="flex flex-col mb-2 w-full">
@@ -20,6 +20,6 @@
             <textarea id="content" name="content" placeholder="Question.." required [(ngModel)]="content"
                 class="p-2 border border-gray-400 rounded resize-none mt-5"></textarea>
         </div>
-        <button type="submit" class="bg-gray-900 text-gray-50 rounded-sm  px-6 py-2.5 cursor-pointer">Send</button>
+        <button type="submit" class="bg-gray-900 text-gray-50 rounded-sm mt-4 px-6 py-2.5 cursor-pointer">Send</button>
     </form>
 </div>

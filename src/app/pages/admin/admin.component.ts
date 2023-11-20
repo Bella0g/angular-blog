@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Post } from '../../interface/post';
 import { PostService } from 'src/app/service/post.service';
+import { NgForm } from '@angular/forms';
 
 /**
  * This component uses post from interface and postService to create new post
@@ -25,11 +26,15 @@ export class AdminComponent {
       title: '',
       imageUrl: '',
       content: '',
-      additionalImageUrls: [],
       likes: 0,
       dislikes: 0,
       comment: []
     };
+  }
+
+  onFormSubmit() {
+    this.addPost(); // Call the method to add the post
+    this.clearForm(); // Call the method to clear the form
   }
 
   // Save the new post object to local storage
@@ -44,7 +49,6 @@ export class AdminComponent {
       content: this.newPost.content,
       imageUrl: this.newPost.imageUrl,
       postId: this.newPost.postId,
-      additionalImageUrls: this.newPost.additionalImageUrls,
       likes: this.newPost.likes,
       dislikes: this.newPost.dislikes,
       comment: this.newPost.comment
@@ -52,8 +56,15 @@ export class AdminComponent {
     // Add the new post using the post service
     this.postService.addPost(postToAdd);
   }
+
+  clearForm() {
+    // this.form.resetForm();
+  }
+
+
   // Generate a unique ID for the new post
   private generateUniqueId(): number {
     return Date.now();
   }
+
 }
