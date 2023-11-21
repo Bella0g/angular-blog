@@ -1,8 +1,9 @@
 <section class="flex first items-center flex-col min-h-full">
 
     <h2 class="text-3xl font-medium font-mono mb-4">Create a New Blog Post</h2>
-    <!-- Add post form -->
-    <form (ngSubmit)="onFormSubmit()" #form="ngForm" class="p-2.5 w-full flex flex-col bg-white shadow-lg max-w-2xl">
+
+    <!-- Add post form that resets on submit -->
+    <form (ngSubmit)="onFormSubmit(form)" #form="ngForm" class="p-2.5 w-full flex flex-col bg-white shadow-lg max-w-2xl">
         <!-- Title input ngModel to add new post title -->
         <input type="text" id="title" name="title" [(ngModel)]="newPost.title" required placeholder="Title.."
             class="p-2 border bg-gray-50 border-gray-400 rounded mt-5">
@@ -14,8 +15,9 @@
         <!-- Content input ngModel to add new post content -->
         <textarea id="content" name="content" [(ngModel)]="newPost.content" required placeholder="Post content.."
             class="p-2 border bg-gray-50 border-gray-400 rounded resize-none min-h-max mt-5 mb-2"></textarea>
+
+        <!-- Button to add new post  -->
         <div class="flex justify-center">
-            <!-- Button to add new post  -->
             <button type="submit" class="bg-stone-800 text-gray-50 rounded-sm px-6 py-2.5 cursor-pointer">Send</button>
         </div>
     </form>
