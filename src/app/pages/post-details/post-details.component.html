@@ -4,7 +4,7 @@
         <h1 class="text-3xl font-bold mb-4">{{ post.title }}</h1>
 
         <div class="max-w-full mb-4">
-            <img [src]="post.imageUrl" alt="{{ post.title }}" class="w-full h-auto">
+            <img [src]="post.imageUrl" alt="{{ post.title }}" class="w-full h-auto shadow-md">
         </div>
         <!-- Like dislike button -->
         <app-react-btn></app-react-btn>
@@ -14,7 +14,7 @@
         </div>
 
         <div class="max-w-full mb-4">
-            <img [src]="post.additionalImageUrls" alt="{{ post.additionalImageUrls }}" class="w-full h-auto">
+            <img [src]="post.additionalImageUrls" alt="{{ post.additionalImageUrls }}" class="w-full h-auto shadow-md">
         </div>
         <app-comment-form [postId]="post.postId"></app-comment-form>
     </section>

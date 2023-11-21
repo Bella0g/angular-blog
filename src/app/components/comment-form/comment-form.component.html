@@ -5,11 +5,11 @@
         <textarea [(ngModel)]="comment" class="p-2 border border-gray-400 rounded mb-4 w-full resize-y"
             placeholder="Write a comment..."></textarea>
         <button (click)="addComment()" type="submit"
-            class="bg-gray-900 text-gray-50 rounded-sm px-6 py-2.5 mb-4 cursor-pointer">Comment</button>
+            class="bg-stone-800 text-gray-50 rounded-sm px-6 py-2.5 mb-4 cursor-pointer">Comment</button>
     </div>
     <!-- Display existing comments -->
-    <div *ngFor="let comment of postComments" class="px-2 mb-2 border border-gray-300">
+    <div *ngFor="let comment of postComments" class="px-2 mb-2 border rounded border-gray-300">
         <p>{{ comment.body }}</p>
-        <p class="text-gray-500 font-light"> {{comment.timeStamp | date: 'short' }} </p>
+        <p class="text-gray-500 text-xs font-light"> {{comment.timeStamp | date: 'short' }} </p>
     </div>
 </div>
