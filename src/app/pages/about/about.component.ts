@@ -12,11 +12,13 @@ import { NgForm } from '@angular/forms';
 })
 
 export class AboutComponent {
+  
   // Set title and content to empty string
   title: string = '';
   content: string ='';
   
   onSubmit(form: NgForm) {
+
     // Log form in console
     console.log('Title:', this.title);
     console.log('Content:', this.content);

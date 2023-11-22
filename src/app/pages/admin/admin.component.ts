@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormsModule, NgForm } from '@angular/forms';
+import { NgForm } from '@angular/forms';
 import { Post } from '../../interface/post';
 import { PostService } from 'src/app/service/post.service';
 
@@ -37,6 +37,7 @@ export class AdminComponent {
     };
   }
 
+  // Method to handle form submission and add a new post
   onFormSubmit(form: NgForm) {
     this.addPost(); // Call the method to add the post
     form.reset() // Resets form 
@@ -58,6 +59,7 @@ export class AdminComponent {
       dislikes: this.newPost.dislikes,
       comment: this.newPost.comment
     };
+    
     // Add the new post using the post service
     this.postService.addPost(postToAdd);
   }

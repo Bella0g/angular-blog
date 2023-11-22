@@ -7,12 +7,17 @@ import { Comment } from '../../interface/comments';
   styleUrls: ['./comment-form.component.css']
 })
 
+/**
+ * Comment for creating a new comment, adding to local storage and getting the comments.
+*/
 
 export class CommentFormComponent {
   @Input() postId: number = 0;
   comment: string = "";
+
   postComments: Comment[] = [];
 
+  // Method to handle adding a new comment
   addComment() {
     if (this.comment.trim() !== "") {
       const newComment: Comment = {
@@ -26,11 +31,13 @@ export class CommentFormComponent {
     }
   }
 
+  // Save comments to local storage
   saveCommentsToLocalStorage() {
     const key = `comments-${this.postId}`;
     localStorage.setItem(key, JSON.stringify(this.postComments));
   }
 
+  // Retrieve comments from local storage
   getCommentsFromLocalStorage(): Comment[] {
     const key = `comments-${this.postId}`;
     const commentsString = localStorage.getItem(key);
@@ -41,6 +48,7 @@ export class CommentFormComponent {
     }
   }
 
+  // Initialize the component
   ngOnInit() {
     this.postComments = this.getCommentsFromLocalStorage();
   }

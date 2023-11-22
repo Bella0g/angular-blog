@@ -9,16 +9,19 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'photo-blog';
-  // Declare header text and admin mode bool
+  
+  // Declare header text and admin mode boolean
   isAdminMode: boolean = false;
   headerText: string = 'Admin';
 
   constructor(private router: Router) { }
-  // Toggle admin user mode
+
+  // Method to toggle the user mode between admin and user
   toggleUserStatus() {
     this.isAdminMode = !this.isAdminMode;
     this.headerText = this.isAdminMode ? 'User' : 'Admin';
 
+    // If not in admin mode, navigate to the default route
     if (!this.isAdminMode) {
       this.router.navigate(['/']);
     }

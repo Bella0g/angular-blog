@@ -1,7 +1,7 @@
 import { Post } from "src/app/interface/post";
 
 /**
- * Post data i used insted of an api to give the page some post to work with.
+ * Post data i used instead of an api to give the page some post to work with.
 */
 export const postData: Post[] = [
     {
