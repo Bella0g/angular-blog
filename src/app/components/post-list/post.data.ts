@@ -16,7 +16,7 @@ export const postData: Post[] = [
                 Caravan has successfully curated a magical evening, fusing Parisian charm with contemporary flair.
                 A testament to enduring elegance, this establishment is poised to become a cherished destination in the city's nightlife. `,
         additionalImageUrls: ['./assets/bar/bar-2.jpeg'],
-        creationDate: '13.02.2024',
+        creationDate: '13/02/2024',
         likes: 0,
         dislikes: 0,
         comment: [],
@@ -32,7 +32,7 @@ export const postData: Post[] = [
                 In the final frames, as the sun dipped below the skyline, the ballerina's silhouette against the city lights encapsulated the essence of this urban ballet—a timeless fusion of grace and energy, where the beauty of dance met the dynamic spirit of New York City. 
                 Join us in savoring the magic of this ballet amidst skyscrapers, where the grace of movement collided with the rhythm of the city, creating a visual masterpiece that transcends both time and space. `,
         additionalImageUrls: ['./assets/ballerina/ballerina-3.jpeg'],
-        creationDate: '13.02.2024',
+        creationDate: '02/03/2024',
         likes: 0,
         dislikes: 0,
         comment: [],
@@ -49,7 +49,7 @@ export const postData: Post[] = [
                 Capturing the Essence: Our lens captures not just garments but the spirit of H33y's unisex vision. Each photograph is a snapshot of a movement towards a more inclusive, diverse, and stylish future.
                 Join us in unveiling the secrets behind H33y's unisex revolution—a journey of creativity, innovation, and a pledge to redefine fashion for a new era.`,
         additionalImageUrls: ['./assets/designer/designer-1.jpeg'],
-        creationDate: '13.02.2024',
+        creationDate: '23/03/2024',
         likes: 0,
         dislikes: 0,
         comment: [],
@@ -67,7 +67,7 @@ export const postData: Post[] = [
                 Lens on Culture: Our lens captures not just garments but the essence of Chromatic Harmony's celebration of culture—a dynamic interplay between tradition and modernity, encapsulating India's vibrant kaleidoscope.
                 Join us in exploring the vivid tapestry of Chromatic Harmony, where every step on the runway is a dance between heritage and contemporary style.`,
         additionalImageUrls: [ './assets/india/india-f-3.jpeg' ],
-        creationDate: '13.02.2024',
+        creationDate: '01/04/2024',
         likes: 0,
         dislikes: 0,
         comment: [],
@@ -81,7 +81,7 @@ export const postData: Post[] = [
                 The stark simplicity of the white suit becomes a canvas, allowing the intricacies of a traditional hairstyle to shine. Each strand, each carefully arranged detail, becomes a nod to cultural heritage, seamlessly blending with the contemporary flair of the ensemble.
                 This fusion of elements creates a striking visual contrast—modernity meeting tradition in a harmonious convergence. The clean lines of the white suit accentuate the intricate beauty of the traditional hairstyle, resulting in a look that is both timeless and avant-garde.`,
         additionalImageUrls: ['../assets/japan/japan-model-3.jpeg'],
-        creationDate: '13.02.2024',
+        creationDate: '05/04/2024',
         likes: 0,
         dislikes: 0,
         comment: [],
@@ -95,7 +95,7 @@ export const postData: Post[] = [
                 Our lens delves into the soul of H33y's ethos, capturing not just garments but the spirit of a brand that harmonizes with the environment. Each photograph tells a story of conscious style—where fashion is a statement, and sustainability is a way of life.
                 Join us in applauding H33y's debut marketing photoshoot—a visual testament to the brand's commitment to unisex elegance, sustainability, and a future where fashion and conscience walk hand in hand.`,
         additionalImageUrls: ['../assets/new-brand/brand-3.jpeg'],
-        creationDate: '11.02.2024',
+        creationDate: '11/04/2024',
         likes: 0,
         dislikes: 0,
         comment: [],
@@ -109,7 +109,7 @@ export const postData: Post[] = [
                 The underwater setting serves as a metaphor for the depths explored in 'Water Sirens'—both musically and thematically. It's a plunge into the abyss of emotions, and our photographs aim to capture the raw, unfiltered essence that the band has woven into each track.
                 Explore the meticulous planning and creative process behind the underwater shoot. From choosing the right aquatic location to the challenges of capturing the perfect shot beneath the surface, witness the making of visual waves that echo the band's sonic ripples.`,
         additionalImageUrls: ['./assets/water/water-5.jpeg'],
-        creationDate: '20.05.2024',
+        creationDate: '28/05/2024',
         likes: 0,
         dislikes: 0,
         comment: [],
@@ -124,7 +124,7 @@ export const postData: Post[] = [
                 Through leaps and twirls, the student navigates the emotional landscape of the subject. It's a journey of self-discovery and empathy, where the dancer merges their own emotions with those of the subject, creating a profound connection that resonates with the audience.
                 In this expressive dance, the boundary between the student and the subject blurs. The performer doesn't merely interpret; they become an extension of the subject, forging a unique identity that transcends the traditional roles of dancer and theme.`,
         additionalImageUrls: ['./assets/student/art-student-5.jpeg'],
-        creationDate: '13.02.2024',
+        creationDate: '18/06/2024',
         likes: 0,
         dislikes: 0,
         comment: [],
