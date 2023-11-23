@@ -31,6 +31,7 @@ export class AdminComponent {
       title: '',
       imageUrl: '',
       content: '',
+      creationDate: '',
       likes: 0,
       dislikes: 0,
       comment: []
@@ -53,6 +54,7 @@ export class AdminComponent {
     const postToAdd: Post = {
       title: this.newPost.title,
       content: this.newPost.content,
+      creationDate: new Date().toISOString(),
       imageUrl: this.newPost.imageUrl,
       postId: this.newPost.postId,
       likes: this.newPost.likes,

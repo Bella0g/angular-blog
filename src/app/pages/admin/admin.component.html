@@ -4,6 +4,7 @@
 
     <!-- Add post form that resets on submit -->
     <form (ngSubmit)="onFormSubmit(form)" #form="ngForm" class="p-2.5 w-full flex flex-col bg-white shadow-lg max-w-2xl">
+        
         <!-- Title input ngModel to add new post title -->
         <input type="text" id="title" name="title" [(ngModel)]="newPost.title" required placeholder="Title.."
             class="p-2 border bg-gray-50 border-gray-400 rounded mt-5">

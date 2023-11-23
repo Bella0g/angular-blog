@@ -9,6 +9,11 @@
              class="w-full h-auto shadow-md">
         </div>
 
+        <!-- Post date -->
+        <div>
+            <p>{{ post.creationDate | date: 'short' }}</p>
+        </div>
+        
         <!-- Like dislike button -->
         <app-react-btn></app-react-btn>
 

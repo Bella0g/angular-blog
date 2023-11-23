@@ -47,6 +47,7 @@ export class PostListComponent implements OnInit {
       title: '',
       imageUrl: '',
       content: '',
+      creationDate: '',
       likes: 0,
       dislikes: 0,
       comment: [],
