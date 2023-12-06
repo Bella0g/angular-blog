@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-react-btn',
@@ -11,37 +11,34 @@ export class ReactBtnComponent {
   dislike: number = 0;
   like: number = 0;
 
-  addReaction(type: string) {
-    if (type === 'add') {
-      this.like++;
-    } else if (type === 'minus') {
-      this.dislike++;
-    }
-    this.saveReactionToLocalStorage(); // Call the method to save the counts to local storage
+  ngOnInit() {
+    this.loadReactionFromLocalStorage();
   }
 
-  // Save like and dislike counts to local storage
+  likePost() {
+    this.like++;
+    this.saveReactionToLocalStorage();
+  }
+
+  dislikePost() {
+    this.dislike++;
+    this.saveReactionToLocalStorage();
+  }
+
   saveReactionToLocalStorage() {
     const key = `reactions-${this.postId}`;
     const reactions = { like: this.like, dislike: this.dislike };
     localStorage.setItem(key, JSON.stringify(reactions));
   }
 
-  // Retrieve like and dislike counts from local storage
-  getReactionFromLocalStorage(): { like: number; dislike: number } {
+  loadReactionFromLocalStorage() {
     const key = `reactions-${this.postId}`;
     const reactionsString = localStorage.getItem(key);
     if (reactionsString) {
-      return JSON.parse(reactionsString);
-    } else {
-      return { like: 0, dislike: 0 };
+      const reactions = JSON.parse(reactionsString);
+      this.like = reactions.like;
+      this.dislike = reactions.dislike;
     }
   }
-
-  // Initialize the component
-  ngOnInit() {
-    const savedReactions = this.getReactionFromLocalStorage();
-    this.like = savedReactions.like;
-    this.dislike = savedReactions.dislike;
-  }
+ 
 }

@@ -1,6 +1,6 @@
 <!-- Like dislike button -->
 <div class="flex justify-end my-1">
-    <button (click)="addReaction('minus')" class="m-2.5">
+    <button (click)="dislikePost()" class="m-2.5">
         <svg class="h-5 w-5 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round">
             <path
@@ -9,7 +9,7 @@
     </button>
     <p>{{ dislike }}</p>
 
-    <button (click)="addReaction('add')" class="m-2.5">
+    <button (click)="likePost()" class="m-2.5">
         <svg class="h-5 w-5 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round">
             <path

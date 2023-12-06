@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
+
 import { Post } from 'src/app/interface/post';
 import { PostService } from 'src/app/service/post.service';
 import { SaveLocalService } from 'src/app/service/save-local.service';
-import { filter } from 'rxjs/operators';
+import { AdminComponent } from 'src/app/pages/admin/admin.component';
 
 // Imported from './post.data'
 import { postData } from './post.data';
-import { AdminComponent } from 'src/app/pages/admin/admin.component';
 
 /**
  * This component represents a list of posts and handles the display and interaction logic for the list.
@@ -22,7 +23,7 @@ import { AdminComponent } from 'src/app/pages/admin/admin.component';
 export class PostListComponent implements OnInit {
   // Property represents the list of posts fetched from the post.data file
   PostList = postData;
-  
+
   constructor(
     private postService: PostService,
     private router: Router,
@@ -50,8 +51,14 @@ export class PostListComponent implements OnInit {
       return;
     }
 
-    const newPost: Post  = {
-      postId:  postData.length + 1,
+    // Create a new instance of AdminComponent
+    const adminComponent = new AdminComponent(
+      this.postService,
+      this.saveLocalService
+    );
+
+    const newPost: Post = {
+      postId: adminComponent.newPost.postId,
       title: '',
       imageUrl: '',
       content: '',
