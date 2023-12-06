@@ -1,27 +1,35 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
+import { Post } from 'src/app/interface/post';
 import { PostService } from 'src/app/service/post.service';
+import { SaveLocalService } from 'src/app/service/save-local.service';
 import { filter } from 'rxjs/operators';
+
 // Imported from './post.data'
-import { postData } from "./post.data";
+import { postData } from './post.data';
+import { AdminComponent } from 'src/app/pages/admin/admin.component';
 
 /**
  * This component represents a list of posts and handles the display and interaction logic for the list.
  * The postData import is used to fetch the data for the post list.
-*/
+ */
 
 @Component({
   selector: 'app-post-list',
   templateUrl: './post-list.component.html',
-  styleUrls: ['./post-list.component.css']
+  styleUrls: ['./post-list.component.css'],
 })
-
 export class PostListComponent implements OnInit {
   // Property represents the list of posts fetched from the post.data file
   PostList = postData;
+  
+  constructor(
+    private postService: PostService,
+    private router: Router,
+    private saveLocalService: SaveLocalService
+  ) {}
 
-  constructor(private postService: PostService, private router: Router) { }
-  // Uses the filter operator from RxJS to filter the router events and scroll to the top of the page.
+  // Uses the filter operator RxJS to filter the router events and scroll to the top of the page.
   ngOnInit(): void {
     this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
@@ -42,28 +50,21 @@ export class PostListComponent implements OnInit {
       return;
     }
 
-    const newPost = {
-      postId: this.generateUniqueId(),
+    const newPost: Post  = {
+      postId:  postData.length + 1,
       title: '',
       imageUrl: '',
       content: '',
-      creationDate: '',
+      creationDate: new Date().toISOString(),
       likes: 0,
       dislikes: 0,
       comment: [],
     };
 
-    // Add the new post using the post service
-    this.postService.addPost(newPost);
+    postData.push(newPost);
 
-    // Navigate to the post details page for the new post
+    // Save the updated PostData to local storage using the SaveLocalService
+    this.saveLocalService.saveFormData('postData', postData);
     this.router.navigate(['/post-details', newPost.postId]);
   }
-
-  // Generates a unique ID for a new post
-  private generateUniqueId(): number {
-    return Date.now();
-  }
-
 }
-

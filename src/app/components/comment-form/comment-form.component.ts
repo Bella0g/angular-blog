@@ -47,8 +47,7 @@ export class CommentFormComponent {
       return [];
     }
   }
-
-  // Initialize the component
+   // Initialize the component
   ngOnInit() {
     this.postComments = this.getCommentsFromLocalStorage();
   }
