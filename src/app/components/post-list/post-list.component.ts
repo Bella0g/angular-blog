@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
-
 import { Post } from 'src/app/interface/post';
 import { PostService } from 'src/app/service/post.service';
 import { SaveLocalService } from 'src/app/service/save-local.service';
@@ -22,13 +21,18 @@ import { postData } from './post.data';
 })
 export class PostListComponent implements OnInit {
   // Property represents the list of posts fetched from the post.data file
-  PostList = postData;
+  PostList: Post[] = postData;
 
   constructor(
     private postService: PostService,
     private router: Router,
     private saveLocalService: SaveLocalService
-  ) {}
+  ) {
+    this.PostList = [...postData, ...this.postService.getPosts()]; // Update PostList to include both postData and the posts from the service
+    this.postService.newPostAdded.subscribe((post) => {
+      this.PostList.push(post); // Update PostList when a new post is added
+    });
+  }
 
   // Uses the filter operator RxJS to filter the router events and scroll to the top of the page.
   ngOnInit(): void {
@@ -68,10 +72,8 @@ export class PostListComponent implements OnInit {
       comment: [],
     };
 
-    postData.push(newPost);
-
-    // Save the updated PostData to local storage using the SaveLocalService
-    this.saveLocalService.saveFormData('postData', postData);
-    this.router.navigate(['/post-details', newPost.postId]);
+    this.postService.addPost(newPost).subscribe(() => {
+      this.postService.newPostAdded.next(newPost);
+    });
   }
 }
