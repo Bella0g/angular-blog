@@ -1,7 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { postData } from '../../components/post-list/post.data';
-import { Post } from '../../interface/post';
+import { PostService } from 'src/app/service/post.service';
 
 /**
  * This component will show the post details info based on what post the user clicked. 
@@ -15,20 +14,19 @@ import { Post } from '../../interface/post';
 })
 
 export class PostDetailsComponent implements OnInit {
+  id: number = 0;
 
-  @Input() post: Post = {} as Post;
+  constructor(private route: ActivatedRoute, private postService: PostService) { }
 
-  constructor(private route: ActivatedRoute) { }
+  public get post() {
+    return this.postService.getPostById(this.id)
+  }
 
   ngOnInit() {
     this.route.params.subscribe(params => {
       // Find the post data using the post ID
-      const postId: number = +params['id'];
-      console.log('postId from route:', postId);
-
-      // Display the post data in the template
-      this.post = postData.find(p => p.postId === postId) || {} as Post;
-
+      this.id = +params['id'];
+  
       console.log('Post:', this.post);
     });
   }

@@ -20,18 +20,16 @@ import { postData } from './post.data';
   styleUrls: ['./post-list.component.css'],
 })
 export class PostListComponent implements OnInit {
-  // Property represents the list of posts fetched from the post.data file
-  PostList: Post[] = postData;
+  // Property represents the list of posts fetched from the post.data file, ta in från post data array 
 
   constructor(
     private postService: PostService,
     private router: Router,
     private saveLocalService: SaveLocalService
-  ) {
-    this.PostList = [...postData, ...this.postService.getPosts()]; // Update PostList to include both postData and the posts from the service
-    this.postService.newPostAdded.subscribe((post) => {
-      this.PostList.push(post); // Update PostList when a new post is added
-    });
+  ) {  }
+
+  public get PostList() {
+    return this.postService.potsDataArray
   }
 
   // Uses the filter operator RxJS to filter the router events and scroll to the top of the page.
@@ -48,32 +46,5 @@ export class PostListComponent implements OnInit {
     this.router.navigate(['/post', postId]);
   }
 
-  // Handles if new post from admin page can be added to post list
-  handleSubmit(imageUrl: string, title: string) {
-    if (!imageUrl || !title) {
-      console.error('Please fill out all fields.');
-      return;
-    }
-
-    // Create a new instance of AdminComponent
-    const adminComponent = new AdminComponent(
-      this.postService,
-      this.saveLocalService
-    );
-
-    const newPost: Post = {
-      postId: adminComponent.newPost.postId,
-      title: '',
-      imageUrl: '',
-      content: '',
-      creationDate: new Date().toISOString(),
-      likes: 0,
-      dislikes: 0,
-      comment: [],
-    };
-
-    this.postService.addPost(newPost).subscribe(() => {
-      this.postService.newPostAdded.next(newPost);
-    });
-  }
+ 
 }
