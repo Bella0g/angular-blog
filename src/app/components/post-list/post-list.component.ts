@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
-import { Post } from 'src/app/interface/post';
 import { PostService } from 'src/app/service/post.service';
 import { SaveLocalService } from 'src/app/service/save-local.service';
 import { AdminComponent } from 'src/app/pages/admin/admin.component';
@@ -25,7 +24,6 @@ export class PostListComponent implements OnInit {
   constructor(
     private postService: PostService,
     private router: Router,
-    private saveLocalService: SaveLocalService
   ) {  }
 
   public get PostList() {
@@ -46,5 +44,4 @@ export class PostListComponent implements OnInit {
     this.router.navigate(['/post', postId]);
   }
 
- 
 }

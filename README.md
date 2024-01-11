@@ -2,8 +2,8 @@
 
 A blog for a photographer with a minimal clean aesthetic.
 
-![Alt text](/client/public/chat.jpeg)
-![Alt text](/client/public/chat-2.jpeg)
+![Alt text](/assets/home-page.png)
+![Alt text](/assets/home-page-2.png)
 
 ## Features
 - Mobile compatible.
