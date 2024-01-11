@@ -1,6 +1,6 @@
 # PhotoBlog
 
-A blog for a photographer with a minimal clean aesthetic.
+A remade reddit clone using pico css and react. 
 
 ![Alt text](/assets/home-page.png)
 ![Alt text](/assets/home-page-2.png)
@@ -13,9 +13,9 @@ A blog for a photographer with a minimal clean aesthetic.
 - Comment timestamps.
 
 ## Technologies Used
-- Angular
-- Typescript
-- tailwind css
+- React
+- Javascript
+- Pico css
 
 ## Getting Started
 Follow these instructions to set up and run the project on your local machine.
@@ -26,11 +26,11 @@ You need to have Node.js and npm (Node Package Manager) installed on your system
 ### Installation
 1. Clone the repository to your local machine using:
     ```html
-    git clone https://github.com/Bella0g/angular-blog.git
+    git clone 
     
 2. Navigate to the project directory:
     ```html
-   cd angular-blog
+   cd 
     
 3. Install the project dependencies:
     ```html
@@ -52,5 +52,4 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
 
