@@ -1,6 +1,6 @@
 # PhotoBlog
 
-A remade reddit clone using pico css and react. 
+A blog for a photographer with a minimal clean aesthetic.
 
 ![Alt text](/assets/home-page.png)
 ![Alt text](/assets/home-page-2.png)
@@ -13,9 +13,9 @@ A remade reddit clone using pico css and react.
 - Comment timestamps.
 
 ## Technologies Used
-- React
-- Javascript
-- Pico css
+- Angular
+- Typescript
+- tailwind css
 
 ## Getting Started
 Follow these instructions to set up and run the project on your local machine.
