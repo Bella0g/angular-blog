@@ -4,6 +4,8 @@ A blog for a photographer with a minimal clean aesthetic.
 
 ![Alt text](/assets/home-page.png)
 ![Alt text](/assets/home-page-2.png)
+![Alt text](/assets/post.png)
+![Alt text](/assets/post-2.png)
 
 ## Features
 - Mobile compatible.
